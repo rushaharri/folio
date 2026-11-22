@@ -1,0 +1,3288 @@
+<!DOCTYPE html>
+<html lang="en"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNzg2NjUxNDg4NTY1NjU4ODg1MCIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2RkMzI0YjFkZTBlZGE3YmNfaW5kZXguaHRtbC03MTMifSwiZXhwIjoxNzk1MzI5MzY3LCJpYXQiOjE3OTUzMjU3NjcsImFsZyI6IlJTMjU2In0.ZqZ8xDalNLxTmvhHJC3-kFd93P00vf84V82HHW7EDPTw0xIgCE5_r_s3PfUJKKkfvxIOEhFnIRR3xQo1rwdBrFcZv6V1AbbirYKFu7OWxnSbZaXY7OuFcd4o71Ue9tZUxTEmTYvSZcWwSRj614HdClRCnBjMnwC_OBSh5yVTv4So1nSxSyDyx8CqlsWz6pEQGCdHz5aqp6qhQyjoYfuQ4dUceFQdB7JTUl3qdgH6iRKNj2A5mVvseDwY9sfrVK20asw1hIDD8RFZRhm2h4TniPM7-qirRWqy2UOX2c5_LqIOHOr0sd8GWYGHDFD78BKh-rm8HIIMO5bIURHcPWwk3g","c_dd324b1de0eda7bc_index.html-713")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folio — Research Paper Reader &amp; Synthesis Workspace</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Newsreader, Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet">
+    <!-- PDF.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" crossorigin="anonymous"></script>
+    <script>
+      if (window.pdfjsLib) {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+          'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Newsreader', 'Georgia', 'serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              canvas: '#F9F8F6',
+              surface: '#FFFFFF',
+              ink: '#1C1B18',
+              muted: '#6E6B64',
+              hairline: '#E6E4DF',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #f9f8f6;
+        color: #1c1b18;
+        font-family: 'Inter', sans-serif;
+        overflow: hidden;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .custom-scroll::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      .custom-scroll::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scroll::-webkit-scrollbar-thumb {
+        background: #dcd8d0;
+        border-radius: 9999px;
+      }
+      .custom-scroll::-webkit-scrollbar-thumb:hover {
+        background: #c2bdb2;
+      }
+      /* PDF Text Selection Layer */
+      .pdf-page-wrapper {
+        position: relative;
+        margin: 0 auto 24px auto;
+        background: #ffffff;
+        box-shadow: 0 4px 20px rgba(28, 27, 24, 0.08);
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .textLayer {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        opacity: 0.25;
+        line-height: 1;
+        user-select: text;
+      }
+      .textLayer > span {
+        color: transparent;
+        position: absolute;
+        white-space: pre;
+        cursor: text;
+        transform-origin: 0% 0%;
+      }
+      .textLayer ::selection {
+        background: rgba(245, 158, 11, 0.45);
+      }
+      .highlight-layer {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+      }
+      .pdf-highlight-rect {
+        position: absolute;
+        border-radius: 2px;
+        mix-blend-mode: multiply;
+        pointer-events: auto;
+        cursor: pointer;
+        transition: opacity 0.15s ease;
+      }
+      .pdf-highlight-rect:hover {
+        outline: 1.5px solid #1c1b18;
+      }
+      /* Flowchart Drafting Grid */
+      .fc-grid-bg {
+        background-color: #fcfbf9;
+        background-image: radial-gradient(#dcd8d0 1.25px, transparent 1.25px);
+        background-size: 20px 20px;
+      }
+      .fc-node {
+        position: absolute;
+        width: 230px;
+        background: #ffffff;
+        border: 1px solid #e6e4df;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(28, 27, 24, 0.06);
+        user-select: none;
+        transition: box-shadow 0.15s ease, border-color 0.15s ease;
+      }
+      .fc-node.selected {
+        border-color: #1c1b18;
+        box-shadow: 0 8px 24px rgba(28, 27, 24, 0.14);
+        z-index: 20;
+      }
+      .fc-port {
+        width: 11px;
+        height: 11px;
+        border-radius: 9999px;
+        background: #ffffff;
+        border: 2px solid #6e6b64;
+        position: absolute;
+        cursor: crosshair;
+        transition: transform 0.12s ease, background-color 0.12s ease;
+      }
+      .fc-port:hover {
+        transform: scale(1.3);
+        background: #1c1b18;
+        border-color: #1c1b18;
+      }
+    </style>
+  <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-3{bottom:0.75rem}.bottom-5{bottom:1.25rem}.left-1\/2{left:50%}.left-3{left:0.75rem}.right-5{right:1.25rem}.top-3{top:0.75rem}.z-30{z-index:30}.z-50{z-index:50}.col-span-full{grid-column:1 / -1}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.ml-1{margin-left:0.25rem}.mt-1{margin-top:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mt-0\.5{margin-top:0.125rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-11{height:2.75rem}.h-12{height:3rem}.h-3{height:0.75rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-7{height:1.75rem}.h-\[460px\]{height:460px}.h-full{height:100%}.h-screen{height:100vh}.max-h-\[540px\]{max-height:540px}.w-12{width:3rem}.w-3{width:0.75rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-7{width:1.75rem}.w-72{width:18rem}.w-80{width:20rem}.w-full{width:100%}.w-screen{width:100vw}.min-w-0{min-width:0px}.max-w-4xl{max-width:56rem}.max-w-full{max-width:100%}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.origin-top-left{transform-origin:top left}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-grab{cursor:grab}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-3\.5{gap:0.875rem}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-t-lg{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem}.rounded-t-xl{border-top-left-radius:0.75rem;border-top-right-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-0{border-bottom-width:0px}.border-l{border-left-width:1px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-500{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.border-hairline{--tw-border-opacity:1;border-color:rgb(230 228 223 / var(--tw-border-opacity, 1))}.border-purple-200{--tw-border-opacity:1;border-color:rgb(233 213 255 / var(--tw-border-opacity, 1))}.border-sky-200{--tw-border-opacity:1;border-color:rgb(186 230 253 / var(--tw-border-opacity, 1))}.border-stone-700{--tw-border-opacity:1;border-color:rgb(68 64 60 / var(--tw-border-opacity, 1))}.border-hairline\/70{border-color:rgb(230 228 223 / 0.7)}.bg-\[\#ECEAE4\]{--tw-bg-opacity:1;background-color:rgb(236 234 228 / var(--tw-bg-opacity, 1))}.bg-\[\#EFECE6\]{--tw-bg-opacity:1;background-color:rgb(239 236 230 / var(--tw-bg-opacity, 1))}.bg-\[\#FAF9F7\]{--tw-bg-opacity:1;background-color:rgb(250 249 247 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-50\/70{background-color:rgb(255 251 235 / 0.7)}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.bg-canvas{--tw-bg-opacity:1;background-color:rgb(249 248 246 / var(--tw-bg-opacity, 1))}.bg-ink{--tw-bg-opacity:1;background-color:rgb(28 27 24 / var(--tw-bg-opacity, 1))}.bg-ink\/50{background-color:rgb(28 27 24 / 0.5)}.bg-ink\/60{background-color:rgb(28 27 24 / 0.6)}.bg-purple-50{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.bg-sky-50{--tw-bg-opacity:1;background-color:rgb(240 249 255 / var(--tw-bg-opacity, 1))}.bg-stone-200\/80{background-color:rgb(231 229 228 / 0.8)}.bg-surface{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-surface\/95{background-color:rgb(255 255 255 / 0.95)}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.p-1{padding:0.25rem}.p-1\.5{padding:0.375rem}.p-10{padding:2.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-3{padding-bottom:0.75rem}.pl-1{padding-left:0.25rem}.pl-2{padding-left:0.5rem}.pr-2{padding-right:0.5rem}.pt-2{padding-top:0.5rem}.pb-2{padding-bottom:0.5rem}.pb-4{padding-bottom:1rem}.pt-1{padding-top:0.25rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:JetBrains Mono, monospace}.font-serif{font-family:Newsreader, Georgia, serif}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.leading-snug{line-height:1.375}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-amber-900\/80{color:rgb(120 53 15 / 0.8)}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-ink{--tw-text-opacity:1;color:rgb(28 27 24 / var(--tw-text-opacity, 1))}.text-muted{--tw-text-opacity:1;color:rgb(110 107 100 / var(--tw-text-opacity, 1))}.text-purple-300{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.text-purple-900{--tw-text-opacity:1;color:rgb(88 28 135 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252 / var(--tw-text-opacity, 1))}.text-sky-900{--tw-text-opacity:1;color:rgb(12 74 110 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.hover\:bg-amber-100:hover{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-100\/70:hover{background-color:rgb(254 243 199 / 0.7)}.hover\:bg-amber-500\/30:hover{background-color:rgb(245 158 11 / 0.3)}.hover\:bg-amber-700:hover{--tw-bg-opacity:1;background-color:rgb(180 83 9 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500\/30:hover{background-color:rgb(16 185 129 / 0.3)}.hover\:bg-purple-100:hover{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-500\/30:hover{background-color:rgb(168 85 247 / 0.3)}.hover\:bg-rose-100:hover{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.hover\:bg-sky-100:hover{--tw-bg-opacity:1;background-color:rgb(224 242 254 / var(--tw-bg-opacity, 1))}.hover\:bg-sky-500\/30:hover{background-color:rgb(14 165 233 / 0.3)}.hover\:bg-stone-100:hover{--tw-bg-opacity:1;background-color:rgb(245 245 244 / var(--tw-bg-opacity, 1))}.hover\:bg-stone-200:hover{--tw-bg-opacity:1;background-color:rgb(231 229 228 / var(--tw-bg-opacity, 1))}.hover\:bg-stone-200\/60:hover{background-color:rgb(231 229 228 / 0.6)}.hover\:bg-stone-200\/70:hover{background-color:rgb(231 229 228 / 0.7)}.hover\:bg-stone-200\/80:hover{background-color:rgb(231 229 228 / 0.8)}.hover\:bg-stone-800:hover{--tw-bg-opacity:1;background-color:rgb(41 37 36 / var(--tw-bg-opacity, 1))}.hover\:bg-stone-200\/50:hover{background-color:rgb(231 229 228 / 0.5)}.hover\:text-ink:hover{--tw-text-opacity:1;color:rgb(28 27 24 / var(--tw-text-opacity, 1))}.focus\:border-ink:focus{--tw-border-opacity:1;border-color:rgb(28 27 24 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:flex{display:flex}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:p-6{padding:1.5rem}.sm\:p-8{padding:2rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:w-96{width:24rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:inline{display:inline}.lg\:w-72{width:18rem}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:border-l{border-left-width:1px}.lg\:border-t-0{border-top-width:0px}}@media (min-width: 1280px){.xl\:col-span-4{grid-column:span 4 / span 4}.xl\:col-span-8{grid-column:span 8 / span 8}.xl\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.xl\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+  <body class="h-screen w-screen flex flex-col select-none">
+    <!-- Hidden File Input for PDFs -->
+    <input type="file" id="pdf-file-input" accept="application/pdf" multiple="" class="hidden">
+
+    <!-- Top Chrome: Brand + Browser-Style Color-Coded Tabs + Actions -->
+    <header class="h-12 bg-[#EFECE6] border-b border-hairline flex items-center px-2.5 gap-2 shrink-0 z-30">
+      <!-- Brand Mark -->
+      <div class="flex items-center gap-2 pr-2 border-r border-hairline shrink-0">
+        <div class="w-7 h-7 rounded-lg bg-ink text-white flex items-center justify-center font-serif font-semibold text-base shadow-sm">
+          F
+        </div>
+        <span class="font-serif font-semibold text-base tracking-tight text-ink hidden sm:inline">Folio</span>
+      </div>
+
+      <!-- Pinned Synthesis Board Tab -->
+      <button id="tab-btn-dashboard" onclick="switchTab('dashboard')" class="flex items-center gap-2 px-3 py-1.5 rounded-t-lg text-xs font-semibold transition-all border border-b-0 bg-surface text-ink border-hairline shadow-sm shrink-0 cursor-pointer">
+        <svg class="w-3.5 h-3.5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+        </svg>
+        <span>Synthesis Board</span>
+        <span id="badge-paper-count" class="px-1.5 py-0.2 rounded-full bg-stone-200/80 text-[10px] font-mono text-ink">0</span>
+      </button>
+
+      <!-- Dynamic Color-Coded PDF Tabs Strip -->
+      <div id="paper-tabs-strip" class="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1 py-1"></div>
+
+      <!-- Right Action Buttons -->
+      <div class="flex items-center gap-1.5 shrink-0 pl-1">
+        <button onclick="document.getElementById('pdf-file-input').click()" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-ink hover:bg-stone-800 text-white text-xs font-medium shadow-sm transition-colors cursor-pointer" title="Open Local PDF(s)">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+          </svg>
+          <span>Open PDF</span>
+        </button>
+
+        <button onclick="exportLiteratureReview()" class="hidden md:flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface hover:bg-stone-100 text-ink border border-hairline text-xs font-medium transition-colors cursor-pointer" title="Export Markdown Literature Review">
+          <svg class="w-3.5 h-3.5 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+          <span>Export .md</span>
+        </button>
+
+        <button id="btn-reload-workspace" onclick="window.reloadWorkspace &amp;&amp; window.reloadWorkspace()" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-canvas hover:bg-stone-200/80 text-ink border border-hairline text-xs font-medium transition-colors cursor-pointer" title="Reload &amp; Re-sync Workspace Views">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+          </svg>
+          <span class="hidden lg:inline">Reload</span>
+        </button>
+
+        <button onclick="openShareTesterModal()" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 text-white text-xs font-medium shadow-sm transition-colors cursor-pointer" title="Package &amp; Share Standalone Tester File with a Friend">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
+          </svg>
+          <span>Share App</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- =====================================================================
+         VIEW 1: SYNTHESIS BOARD (MAIN PAGE)
+         ===================================================================== -->
+    <main id="view-dashboard" class="flex-1 flex flex-col overflow-hidden bg-canvas">
+      <!-- Top Studio Header & Main View Tabs -->
+      <div class="bg-surface border-b border-hairline px-4 py-2.5 flex flex-wrap items-center justify-between gap-3 shrink-0">
+        <div class="flex items-center gap-3">
+          <button onclick="toggleCorpusSidebar()" class="p-1.5 rounded-lg border border-hairline bg-canvas hover:bg-stone-200/70 text-ink transition-colors cursor-pointer" title="Toggle Thematic Grouping &amp; Corpus Library">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h10M4 18h16"></path>
+            </svg>
+          </button>
+          <div>
+            <h1 class="font-serif text-lg sm:text-xl font-semibold text-ink leading-tight">
+              Research Synthesis &amp; Framework Studio
+            </h1>
+            <p class="text-[11px] text-muted">
+              Cross-paper claims, theoretical diagrams, citation matrix &amp; corpus history
+            </p>
+          </div>
+        </div>
+
+        <!-- Ordered View Tabs: Split Studio -> Framework Flowchart -> Summaries & Notes -> Reference Board & Matrix -> Paper History -->
+        <div class="flex items-center gap-1 bg-canvas p-1 rounded-xl border border-hairline overflow-x-auto max-w-full">
+          <button id="mode-btn-split" onclick="setDashboardLayoutMode('split')" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all bg-ink text-white shadow-sm whitespace-nowrap cursor-pointer">
+            Split Studio
+          </button>
+          <button id="mode-btn-flowchart" onclick="setDashboardLayoutMode('flowchart')" class="px-3 py-1.5 rounded-lg text-xs font-medium text-muted hover:text-ink transition-all whitespace-nowrap cursor-pointer">
+            Framework Flowchart
+          </button>
+          <button id="mode-btn-overview" onclick="setDashboardLayoutMode('overview')" class="px-3 py-1.5 rounded-lg text-xs font-medium text-muted hover:text-ink transition-all whitespace-nowrap cursor-pointer">
+            Summaries &amp; Notes
+          </button>
+          <button id="mode-btn-references" onclick="setDashboardLayoutMode('references')" class="px-3 py-1.5 rounded-lg text-xs font-medium text-muted hover:text-ink transition-all whitespace-nowrap cursor-pointer">
+            Reference Board &amp; Matrix
+          </button>
+          <button id="mode-btn-history" onclick="setDashboardLayoutMode('history')" class="px-3 py-1.5 rounded-lg text-xs font-medium text-muted hover:text-ink transition-all whitespace-nowrap cursor-pointer">
+            Paper History
+          </button>
+        </div>
+      </div>
+
+      <!-- Body Below Studio Header: Left Thematic Grouping & Corpus Sidebar + Right Active Workspace -->
+      <div class="flex-1 flex overflow-hidden">
+        <!-- Left Collapsible Sidebar: Thematic Grouping & Corpus Library -->
+        <aside id="corpus-sidebar" class="w-72 bg-surface border-r border-hairline flex flex-col shrink-0 transition-all duration-200 overflow-hidden">
+          <div class="p-3 border-b border-hairline flex items-center justify-between bg-[#FAF9F7]">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-muted">
+              Thematic Folders &amp; Corpus
+            </span>
+            <button onclick="createTheoryFolder()" class="px-2 py-1 rounded-md bg-ink text-white text-[11px] font-medium hover:bg-stone-800 transition-colors cursor-pointer">
+              + Folder
+            </button>
+          </div>
+          <div id="corpus-sidebar-content" class="flex-1 overflow-y-auto custom-scroll p-3 space-y-4">
+          <div class="space-y-2">
+            <div class="text-[10px] font-bold uppercase tracking-wider text-muted">Theory &amp; Topic Folders</div>
+            
+              <div class="border border-hairline rounded-xl bg-canvas overflow-hidden">
+                <div onclick="toggleFolderExpand('folder-1')" class="px-2.5 py-2 flex items-center justify-between cursor-pointer hover:bg-stone-200/50">
+                  <div class="flex items-center gap-1.5 min-w-0">
+                    <span class="text-[10px] text-muted">▼</span>
+                    <span class="text-xs font-semibold text-ink truncate">Theory X (Click + Group to Add)</span>
+                  </div>
+                  <span class="text-[10px] font-mono px-1.5 py-0.2 rounded bg-surface border border-hairline text-muted">
+                    0
+                  </span>
+                </div>
+                <div class="px-2.5 pb-2 pt-1 space-y-1 border-t border-hairline/70">
+                        <div class="text-[11px] text-muted italic py-1">Empty folder — assign papers below</div>
+                      </div>
+              </div>
+            
+          </div>
+          <div class="space-y-2 pt-2 border-t border-hairline">
+            <div class="text-[10px] font-bold uppercase tracking-wider text-muted">All Open PDFs (0)</div>
+            <div class="p-3 rounded-xl border border-dashed border-hairline bg-canvas text-[11px] text-muted leading-relaxed">
+              No PDFs uploaded yet. Click <strong>+ Open PDF</strong> at the top right or drag PDF files anywhere onto this window.
+            </div>
+          </div>
+        </div>
+        </aside>
+
+        <!-- Main Scrollable Content Area -->
+        <div id="dashboard-main-scroll" class="flex-1 overflow-y-auto custom-scroll p-4 sm:p-6 space-y-6">
+          <!-- SECTION A: RESEARCH FRAMEWORK & FLOWCHART STUDIO -->
+          <section id="dashboard-flowchart-section" class="bg-surface border border-hairline rounded-2xl shadow-sm overflow-hidden flex flex-col">
+            <!-- Flowchart Header & Board Selector -->
+            <div class="px-4 py-3 border-b border-hairline bg-[#FAF9F7] flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <button id="fc-tab-theoretical" onclick="switchFlowchartBoard('theoretical')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-ink text-white shadow-sm cursor-pointer">
+                  Theoretical Framework
+                </button>
+                <button id="fc-tab-design" onclick="switchFlowchartBoard('design')" class="px-3 py-1.5 rounded-lg text-xs font-medium text-muted hover:text-ink cursor-pointer">
+                  Research Design
+                </button>
+                <button id="fc-tab-methodology" onclick="switchFlowchartBoard('methodology')" class="px-3 py-1.5 rounded-lg text-xs font-medium text-muted hover:text-ink cursor-pointer">
+                  Methodology Framework
+                </button>
+              </div>
+
+              <!-- Add Node & Layout Controls -->
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <button onclick="addFlowchartNode('concept')" class="px-2.5 py-1 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 text-xs font-medium cursor-pointer">
+                  + Concept
+                </button>
+                <button onclick="addFlowchartNode('process')" class="px-2.5 py-1 rounded-lg bg-sky-50 hover:bg-sky-100 text-sky-900 border border-sky-200 text-xs font-medium cursor-pointer">
+                  + Step
+                </button>
+                <button onclick="addFlowchartNode('question')" class="px-2.5 py-1 rounded-lg bg-purple-50 hover:bg-purple-100 text-purple-900 border border-purple-200 text-xs font-medium cursor-pointer">
+                  + Lens / RQ
+                </button>
+                <button onclick="toggleConnectMode()" id="btn-fc-connect" class="px-2.5 py-1 rounded-lg bg-surface hover:bg-stone-100 text-ink border border-hairline text-xs font-medium cursor-pointer">
+                  Connect Nodes
+                </button>
+                <button onclick="autoTidyFlowchart()" class="px-2.5 py-1 rounded-lg bg-surface hover:bg-stone-100 text-muted hover:text-ink border border-hairline text-xs font-medium cursor-pointer">
+                  Tidy Layout
+                </button>
+              </div>
+            </div>
+
+            <!-- Interactive Flowchart Canvas + Node Inspector -->
+            <div class="flex flex-col lg:flex-row h-[460px]">
+              <!-- Canvas Viewport -->
+              <div id="fc-viewport" class="relative flex-1 fc-grid-bg overflow-hidden cursor-grab">
+                <div id="fc-connect-banner" class="hidden absolute top-3 left-1/2 -translate-x-1/2 z-30 bg-ink text-white text-xs px-3 py-1.5 rounded-full shadow-md">
+                  Click a source node, then click a target node to link (Esc to cancel)
+                </div>
+
+                <!-- Zoom & Pan Controls -->
+                <div class="absolute bottom-3 left-3 z-30 flex items-center gap-1 bg-surface/95 backdrop-blur border border-hairline rounded-lg p-1 shadow-sm">
+                  <button onclick="zoomFlowchart(-0.1)" class="px-2 py-0.5 text-xs font-bold hover:bg-stone-100 rounded cursor-pointer">-</button>
+                  <span id="fc-zoom-label" class="text-[11px] font-mono px-1.5 text-muted">100%</span>
+                  <button onclick="zoomFlowchart(0.1)" class="px-2 py-0.5 text-xs font-bold hover:bg-stone-100 rounded cursor-pointer">+</button>
+                  <button onclick="resetFlowchartView()" class="px-2 py-0.5 text-[11px] text-muted hover:text-ink border-l border-hairline ml-1 cursor-pointer">Reset</button>
+                </div>
+
+                <!-- Transformable Stage -->
+                <div id="fc-stage" class="absolute inset-0 origin-top-left" style="width: 2400px; height: 1600px; transform: translate(0px, 0px) scale(1);">
+                  <svg id="fc-edges-svg" class="absolute inset-0 w-full h-full pointer-events-none">
+          <defs>
+            <marker id="fc-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#6E6B64"></path>
+            </marker>
+          </defs>
+        
+              <path d="M 195 118 C 331 118, 399 118, 535 118" stroke="#6E6B64" stroke-width="1.75" fill="none" marker-end="url(#fc-arrow)"></path>
+              <rect x="321" y="108" width="88" height="20" rx="6" fill="#FFFFFF" stroke="#E6E4DF"></rect>
+              <text x="365" y="121" text-anchor="middle" font-size="10" fill="#6E6B64" font-family="Inter, sans-serif">
+                influences
+              </text>
+            </svg>
+                  <div id="fc-nodes-layer" class="absolute inset-0"><div class="fc-node " data-node-id="n1" style="left: 80px; top: 70px;">
+            <div class="fc-drag-handle px-3 py-1.5 rounded-t-xl flex items-center justify-between cursor-grab border-b border-hairline" style="background-color:#FDF2EE;">
+              <span class="text-[10px] font-mono uppercase font-bold" style="color:#C85A32;">⋮⋮ concept</span>
+              
+            </div>
+            <div class="p-3 space-y-1">
+              <div class="font-serif font-semibold text-xs text-ink leading-snug">Core Construct A</div>
+              <div class="text-[11px] text-muted leading-snug">Click to rename or link to an uploaded PDF tab</div>
+            </div>
+          </div><div class="fc-node " data-node-id="n2" style="left: 420px; top: 70px;">
+            <div class="fc-drag-handle px-3 py-1.5 rounded-t-xl flex items-center justify-between cursor-grab border-b border-hairline" style="background-color:#EEF7F2;">
+              <span class="text-[10px] font-mono uppercase font-bold" style="color:#3B7A57;">⋮⋮ concept</span>
+              
+            </div>
+            <div class="p-3 space-y-1">
+              <div class="font-serif font-semibold text-xs text-ink leading-snug">Mediating Mechanism B</div>
+              <div class="text-[11px] text-muted leading-snug">Drag card header to move, or click "+ Concept" above</div>
+            </div>
+          </div></div>
+                </div>
+              </div>
+
+              <!-- Right Inspector Drawer for Selected Node -->
+              <div class="w-full lg:w-72 border-t lg:border-t-0 lg:border-l border-hairline bg-surface p-4 overflow-y-auto custom-scroll">
+                <div class="text-[11px] font-bold uppercase tracking-wider text-muted mb-3">
+                  Node Inspector
+                </div>
+                <div id="fc-inspector-empty" class="text-xs text-muted leading-relaxed">
+                  Click any card on the canvas to edit its title, theoretical role, color tag, or link it directly to an open PDF tab. Drag cards by their header handle to reposition.
+                </div>
+                <div id="fc-inspector-form" class="hidden space-y-3">
+                  <div>
+                    <label class="block text-[11px] font-medium text-muted mb-1">Node Title</label>
+                    <input id="fc-insp-title" type="text" oninput="updateSelectedFlowNode('title', this.value)" class="w-full px-2.5 py-1.5 text-xs rounded-lg border border-hairline bg-canvas focus:outline-none focus:border-ink">
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-medium text-muted mb-1">Description / Construct Note</label>
+                    <textarea id="fc-insp-desc" rows="3" oninput="updateSelectedFlowNode('desc', this.value)" class="w-full px-2.5 py-1.5 text-xs rounded-lg border border-hairline bg-canvas focus:outline-none focus:border-ink"></textarea>
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-medium text-muted mb-1">Link to Open PDF Paper</label>
+                    <select id="fc-insp-paper" onchange="updateSelectedFlowNode('paperId', this.value)" class="w-full px-2.5 py-1.5 text-xs rounded-lg border border-hairline bg-canvas focus:outline-none focus:border-ink"></select>
+                  </div>
+                  <div>
+                    <label class="block text-[11px] font-medium text-muted mb-1">Card Accent Color</label>
+                    <div id="fc-insp-colors" class="flex items-center gap-1.5"></div>
+                  </div>
+                  <div class="pt-2 border-t border-hairline flex justify-between">
+                    <button onclick="deleteSelectedFlowNode()" class="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 text-xs font-medium cursor-pointer">
+                      Delete Card
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION B: SUMMARIES & NOTES OVERVIEW -->
+          <section id="dashboard-overview-section" class="space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h2 class="font-serif text-lg font-semibold text-ink">Active Tab Summaries &amp; Synthesis Notes</h2>
+                <p class="text-xs text-muted">Color-coded executive summaries and scratchpad notes across every open paper tab</p>
+              </div>
+              <button onclick="synthesizeCrossPaperThemes()" class="px-3 py-1.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-medium shadow-sm transition-colors cursor-pointer">
+                ✨ Synthesize Cross-Paper Themes
+              </button>
+            </div>
+
+            <!-- Global Cross-Paper Synthesis Scratchpad -->
+            <div class="bg-surface border border-hairline rounded-2xl p-4 shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-semibold text-ink">Master Literature Synthesis Memo</span>
+                <span class="text-[11px] text-muted">Auto-saved locally</span>
+              </div>
+              <textarea id="global-synthesis-notes" rows="3" oninput="updateGlobalNotes(this.value)" placeholder="Write overarching themes, methodological gaps, or cross-paper arguments here..." class="w-full text-xs leading-relaxed bg-canvas border border-hairline rounded-xl p-3 focus:outline-none focus:border-ink"></textarea>
+            </div>
+
+            <!-- Per-Paper Summary Cards Grid -->
+            <div id="paper-cards-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            <div class="col-span-full bg-surface border-2 border-dashed border-hairline rounded-2xl p-6 sm:p-8 shadow-sm space-y-5">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-hairline pb-4">
+                <div>
+                  <span class="inline-block px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[11px] font-semibold mb-1.5">
+                    Getting Started Guide
+                  </span>
+                  <h3 class="font-serif text-xl font-semibold text-ink">Welcome to Folio — Your Research Synthesis Workspace</h3>
+                  <p class="text-xs text-muted mt-0.5">Follow these 4 steps to read, annotate, and synthesize your downloaded research papers:</p>
+                </div>
+                <button onclick="document.getElementById('pdf-file-input').click()" class="px-4 py-2.5 rounded-xl bg-ink hover:bg-stone-800 text-white text-xs font-semibold shadow-sm shrink-0 cursor-pointer transition-colors">
+                  + Open Your First PDF
+                </button>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 text-left">
+                <div class="p-3.5 rounded-xl bg-canvas border border-hairline space-y-1">
+                  <div class="text-xs font-bold text-ink">1. Open &amp; Color-Code PDFs</div>
+                  <p class="text-[11px] text-muted leading-relaxed">
+                    Click <strong>+ Open PDF</strong> (or drag &amp; drop files) to open multiple papers as browser tabs and assign each a distinct color tag.
+                  </p>
+                </div>
+                <div class="p-3.5 rounded-xl bg-canvas border border-hairline space-y-1">
+                  <div class="text-xs font-bold text-ink">2. Highlight Claims &amp; Critiques</div>
+                  <p class="text-[11px] text-muted leading-relaxed">
+                    Select any text inside a PDF tab to tag it as a <strong>Claim</strong>, <strong>Critique</strong>, <strong>Method</strong>, or <strong>Quote</strong> with margin notes.
+                  </p>
+                </div>
+                <div class="p-3.5 rounded-xl bg-canvas border border-hairline space-y-1">
+                  <div class="text-xs font-bold text-ink">3. Build Your Synthesis Matrix</div>
+                  <p class="text-[11px] text-muted leading-relaxed">
+                    Switch to <strong>Reference Board &amp; Matrix</strong> to compare papers side-by-side, draft paraphrases, and click citations to jump straight to that PDF page.
+                  </p>
+                </div>
+                <div class="p-3.5 rounded-xl bg-canvas border border-hairline space-y-1">
+                  <div class="text-xs font-bold text-ink">4. Map Frameworks &amp; Folders</div>
+                  <p class="text-[11px] text-muted leading-relaxed">
+                    Drag cards in the <strong>Framework Flowchart</strong> above to model your theoretical or methodology design, and group PDFs into Theory Folders on the left.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+
+          <!-- SECTION C: REFERENCE BOARD & COMPARATIVE SYNTHESIS MATRIX (SIDE BY SIDE) -->
+          <section id="dashboard-references-section" class="space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h2 class="font-serif text-lg font-semibold text-ink">Reference Board &amp; Comparative Synthesis Chart</h2>
+                <p class="text-xs text-muted">Side-by-side synthesis matrix and direct page-linked citation index</p>
+              </div>
+              <div class="flex items-center gap-2 flex-wrap">
+                <button onclick="toggleMatrixTranspose()" class="px-3 py-1.5 rounded-xl bg-surface hover:bg-stone-100 text-ink border border-hairline text-xs font-semibold shadow-sm cursor-pointer">
+                  ⇄ Transpose Rows/Cols
+                </button>
+                <div class="flex items-center gap-1 bg-surface border border-hairline rounded-xl p-1 text-xs">
+                  <button onclick="setRefBoardFilter('all')" id="ref-filter-all" class="px-2.5 py-1 rounded-lg bg-ink text-white font-medium cursor-pointer">All</button>
+                  <button onclick="setRefBoardFilter('claim')" id="ref-filter-claim" class="px-2.5 py-1 rounded-lg text-muted hover:text-ink cursor-pointer">Claims</button>
+                  <button onclick="setRefBoardFilter('critique')" id="ref-filter-critique" class="px-2.5 py-1 rounded-lg text-muted hover:text-ink cursor-pointer">Critique</button>
+                  <button onclick="setRefBoardFilter('methodology')" id="ref-filter-methodology" class="px-2.5 py-1 rounded-lg text-muted hover:text-ink cursor-pointer">Method</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Side-by-Side Split Grid -->
+            <div id="ref-board-split-grid" class="grid grid-cols-1 xl:grid-cols-12 gap-5 items-start">
+              <!-- Left (8 cols): Comparative Synthesis Chart Table -->
+              <div id="synthesis-matrix-card" class="xl:col-span-8 bg-surface border border-hairline rounded-2xl shadow-sm overflow-hidden transition-all">
+                <div class="px-4 py-3 border-b border-hairline bg-[#FAF9F7] flex flex-wrap items-center justify-between gap-2">
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs font-semibold text-ink">Comparative Synthesis Table</span>
+                    <span class="hidden sm:inline text-[11px] text-muted">· Click any claim/critique badge to jump to PDF page</span>
+                  </div>
+                  <button id="btn-expand-matrix" onclick="toggleMatrixExpand()" class="px-2.5 py-1 rounded-lg bg-surface hover:bg-stone-100 text-ink border border-hairline text-[11px] font-semibold shadow-2xs flex items-center gap-1 cursor-pointer transition-colors" title="Expand Comparative Synthesis Table">
+                    <span>⤢ Expand Table</span>
+                  </button>
+                </div>
+                <div id="synthesis-matrix-container" class="overflow-x-auto custom-scroll">
+            <div class="p-8 text-center space-y-2">
+              <div class="text-xs font-semibold text-ink">Your Comparative Synthesis Table is Ready</div>
+              <p class="text-[11px] text-muted max-w-md mx-auto leading-relaxed">
+                Once you open one or more PDFs, each paper will appear here with rows for <strong>Author &amp; Year</strong>, <strong>Title (Simplified)</strong>, <strong>Claims</strong>, <strong>Critique</strong>, and <strong>Paraphrase</strong>.
+              </p>
+            </div>
+          </div>
+              </div>
+
+              <!-- Right (4 cols): Direct Page-Linked Citation Index -->
+              <div id="citation-index-card" class="xl:col-span-4 bg-surface border border-hairline rounded-2xl shadow-sm overflow-hidden">
+                <div class="px-4 py-3 border-b border-hairline bg-[#FAF9F7] flex items-center justify-between">
+                  <span class="text-xs font-semibold text-ink">Direct Page-Linked Citation Index</span>
+                  <span id="ref-count-badge" class="text-[11px] font-mono text-muted">0 citations</span>
+                </div>
+                <div id="reference-library-list" class="p-3.5 space-y-2.5 max-h-[540px] overflow-y-auto custom-scroll"><div class="text-xs text-muted text-center py-8 leading-relaxed">Open a PDF tab and highlight text to build your clickable page-linked citation index.</div></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION D: DATE-GROUPED PAPER HISTORY -->
+          <section id="dashboard-history-section" class="space-y-4 hidden">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h2 class="font-serif text-lg font-semibold text-ink">Paper &amp; Topic Reading History</h2>
+                <p class="text-xs text-muted">Chronological archive of all opened papers and research topics (closed papers remain logged in gray)</p>
+              </div>
+              <div class="flex items-center gap-1 bg-surface border border-hairline rounded-xl p-1 text-xs">
+                <button id="hist-layout-grid" onclick="setHistoryLayoutMode('grid')" class="px-2.5 py-1 rounded-lg bg-ink text-white font-medium cursor-pointer">
+                  Grid Cards
+                </button>
+                <button id="hist-layout-list" onclick="setHistoryLayoutMode('list')" class="px-2.5 py-1 rounded-lg text-muted hover:text-ink font-medium cursor-pointer">
+                  Vertical List
+                </button>
+              </div>
+            </div>
+            <div id="paper-history-container" class="space-y-4">
+            <div class="bg-surface border border-hairline rounded-2xl p-8 text-center space-y-2">
+              <div class="text-xs font-semibold text-ink">No Reading History Logged Yet</div>
+              <p class="text-[11px] text-muted max-w-md mx-auto leading-relaxed">
+                Every PDF you open is automatically logged here by date. Even if you close a tab later, its topic remains recorded in gray for future reference.
+              </p>
+            </div>
+          </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- =====================================================================
+         VIEW 2: INTERACTIVE PDF READER & SEMANTIC ANNOTATION WORKSPACE
+         ===================================================================== -->
+    <main id="view-reader" class="hidden flex-1 flex flex-col overflow-hidden bg-[#ECEAE4]">
+      <!-- Reader Toolbar -->
+      <div class="h-11 bg-surface border-b border-hairline px-4 flex items-center justify-between gap-2 shrink-0">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <span id="reader-color-dot" class="w-3 h-3 rounded-full shrink-0"></span>
+          <h2 id="reader-paper-title" class="font-serif font-semibold text-sm text-ink truncate">Paper Title</h2>
+          <div id="reader-color-picker" class="hidden sm:flex items-center gap-1 pl-2 border-l border-hairline"></div>
+        </div>
+
+        <!-- Zoom & Page Navigation -->
+        <div class="flex items-center gap-1.5">
+          <button onclick="changeZoom(-0.15)" class="px-2 py-1 rounded-md border border-hairline bg-canvas hover:bg-stone-200 text-xs font-semibold cursor-pointer">-</button>
+          <span id="reader-zoom-level" class="text-xs font-mono w-12 text-center">120%</span>
+          <button onclick="changeZoom(0.15)" class="px-2 py-1 rounded-md border border-hairline bg-canvas hover:bg-stone-200 text-xs font-semibold cursor-pointer">+</button>
+          <span id="reader-page-indicator" class="text-xs font-mono text-muted pl-2">Page 1 / 1</span>
+        </div>
+      </div>
+
+      <!-- Reader Split Pane: PDF Canvas + Margin Annotation & Summary Inspector -->
+      <div class="flex-1 flex overflow-hidden">
+        <!-- Scrollable PDF Pages Container -->
+        <div id="pdf-scroll-container" class="flex-1 overflow-y-auto custom-scroll p-6 relative">
+          <div id="pdf-pages-container" class="max-w-4xl mx-auto"></div>
+        </div>
+
+        <!-- Right Margin Inspector -->
+        <aside class="w-80 md:w-96 bg-surface border-l border-hairline flex flex-col shrink-0">
+          <div class="p-3.5 border-b border-hairline bg-[#FAF9F7] flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-muted">Paper Notes &amp; Highlights</span>
+            <button onclick="autoSummarizeCurrentPaper()" class="px-2.5 py-1 rounded-lg bg-amber-600 hover:bg-amber-700 text-white text-[11px] font-medium cursor-pointer">
+              ✨ Auto-Summarize
+            </button>
+          </div>
+          <div class="flex-1 overflow-y-auto custom-scroll p-4 space-y-4">
+            <div>
+              <label class="block text-[11px] font-semibold uppercase tracking-wider text-muted mb-1">
+                Executive Summary
+              </label>
+              <textarea id="reader-summary-input" rows="4" oninput="updateCurrentPaperSummary(this.value)" placeholder="Key findings, thesis, and contribution..." class="w-full text-xs leading-relaxed bg-canvas border border-hairline rounded-xl p-2.5 focus:outline-none focus:border-ink"></textarea>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-muted">
+                  Semantic Highlights (<span id="reader-highlight-count">0</span>)
+                </span>
+                <span class="text-[10px] text-muted">Select PDF text to highlight</span>
+              </div>
+              <div id="reader-highlights-list" class="space-y-2.5"></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Floating Text Selection Popover -->
+    <div id="selection-popover" class="hidden fixed z-50 bg-ink text-white rounded-xl shadow-xl p-1.5 flex items-center gap-1 border border-stone-700">
+      <button onclick="commitTextHighlight('claim')" class="px-2.5 py-1 rounded-lg hover:bg-amber-500/30 text-amber-300 text-xs font-medium cursor-pointer">Claim</button>
+      <button onclick="commitTextHighlight('critique')" class="px-2.5 py-1 rounded-lg hover:bg-sky-500/30 text-sky-300 text-xs font-medium cursor-pointer">Critique</button>
+      <button onclick="commitTextHighlight('methodology')" class="px-2.5 py-1 rounded-lg hover:bg-emerald-500/30 text-emerald-300 text-xs font-medium cursor-pointer">Method</button>
+      <button onclick="commitTextHighlight('quote')" class="px-2.5 py-1 rounded-lg hover:bg-purple-500/30 text-purple-300 text-xs font-medium cursor-pointer">Quote</button>
+    </div>
+
+    <!-- Drag & Drop PDF Overlay -->
+    <div id="drag-overlay" class="hidden fixed inset-0 z-50 bg-ink/60 backdrop-blur-xs flex items-center justify-center p-6 pointer-events-none">
+      <div class="bg-surface border-2 border-dashed border-amber-500 rounded-3xl p-10 text-center max-w-md shadow-2xl">
+        <div class="text-3xl mb-2">📄</div>
+        <h3 class="font-serif text-xl font-semibold text-ink">Drop Research PDFs to Open</h3>
+        <p class="text-xs text-muted mt-1">Each PDF will open in a color-coded tab ready for highlighting and synthesis.</p>
+      </div>
+    </div>
+
+    <!-- Toast Notification Banner -->
+    <div id="toast-banner" class="hidden fixed bottom-5 right-5 z-50 bg-ink text-white text-xs font-medium px-4 py-2.5 rounded-xl shadow-lg border border-stone-700"></div>
+
+    <!-- Share Standalone Tester Modal -->
+    <div id="share-tester-modal" class="fixed inset-0 z-50 bg-ink/50 backdrop-blur-xs flex items-center justify-center p-4 hidden" onclick="if(event.target === this) closeShareTesterModal()">
+      <div class="bg-surface border border-hairline rounded-2xl max-w-md w-full p-5 shadow-2xl space-y-4">
+        <div class="flex items-center justify-between border-b border-hairline pb-3">
+          <div>
+            <h3 class="font-serif text-lg font-semibold text-ink">Share Folio for Testing</h3>
+            <p class="text-[11px] text-muted">Zero installation required — your friend just double-clicks the HTML file in any browser.</p>
+          </div>
+          <button onclick="closeShareTesterModal()" class="text-muted hover:text-ink text-lg px-1.5 cursor-pointer">×</button>
+        </div>
+
+        <div class="space-y-2.5">
+          <button onclick="downloadStandaloneApp(false)" class="w-full p-3 rounded-xl border border-hairline bg-canvas hover:bg-stone-200/60 text-left flex items-center justify-between transition-colors cursor-pointer">
+            <div>
+              <div class="text-xs font-semibold text-ink">Download Clean Tester Build (.html)</div>
+              <div class="text-[11px] text-muted">Starts with an empty workspace &amp; onboarding guide for your friend</div>
+            </div>
+            <span class="px-2.5 py-1 rounded-lg bg-ink text-white text-[11px] font-medium shrink-0">Download</span>
+          </button>
+
+          <button onclick="downloadStandaloneApp(true)" class="w-full p-3 rounded-xl border border-amber-200 bg-amber-50/70 hover:bg-amber-100/70 text-left flex items-center justify-between transition-colors cursor-pointer">
+            <div>
+              <div class="text-xs font-semibold text-amber-950">Download With My Current Notes &amp; Flowchart</div>
+              <div class="text-[11px] text-amber-900/80">Embeds your active synthesis notes, matrix &amp; diagrams into the file</div>
+            </div>
+            <span class="px-2.5 py-1 rounded-lg bg-amber-600 text-white text-[11px] font-medium shrink-0">Bundle &amp; Save</span>
+          </button>
+
+          <button onclick="copyAppSourceToClipboard()" class="w-full p-2.5 rounded-xl border border-hairline bg-surface hover:bg-stone-100 text-xs font-medium text-ink flex items-center justify-center gap-2 transition-colors cursor-pointer">
+            <span>📋 Copy Single-File HTML Code to Clipboard</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // -----------------------------------------------------------------------
+      // COLOR PALETTE & SEMANTIC HIGHLIGHT STYLES
+      // -----------------------------------------------------------------------
+      const TAB_COLORS = [
+        { id: 'terracotta', label: 'Terracotta', hex: '#C85A32', bg: '#FDF2EE', border: '#F3C6B6' },
+        { id: 'sage', label: 'Sage', hex: '#3B7A57', bg: '#EEF7F2', border: '#B8DEC9' },
+        { id: 'cobalt', label: 'Cobalt', hex: '#2B5B84', bg: '#EEF4FA', border: '#B9D1E6' },
+        { id: 'amber', label: 'Amber', hex: '#B45309', bg: '#FEF6EB', border: '#F6D5A8' },
+        { id: 'plum', label: 'Plum', hex: '#6B3FA0', bg: '#F4EFFA', border: '#D3BFEB' },
+        { id: 'slate', label: 'Slate', hex: '#475569', bg: '#F1F5F9', border: '#CBD5E1' },
+      ];
+
+      const HIGHLIGHT_TYPES = {
+        claim: { label: 'Claim', bg: 'rgba(250, 204, 21, 0.38)', badgeBg: '#FEF9C3', badgeText: '#854D0E' },
+        critique: { label: 'Critique', bg: 'rgba(56, 189, 248, 0.35)', badgeBg: '#E0F2FE', badgeText: '#075985' },
+        methodology: { label: 'Method', bg: 'rgba(52, 211, 153, 0.35)', badgeBg: '#D1FAE5', badgeText: '#065F46' },
+        quote: { label: 'Quote', bg: 'rgba(192, 132, 252, 0.35)', badgeBg: '#F3E8FF', badgeText: '#6B21A8' },
+      };
+
+      const STORAGE_KEY = 'folio_research_workspace_clean_v1';
+      const pdfDocCache = new Map();
+      let pendingSelection = null;
+
+      // -----------------------------------------------------------------------
+      // APPLICATION STATE (CLEAN WORKSPACE)
+      // -----------------------------------------------------------------------
+      let state = {
+        activeTabId: 'dashboard',
+        dashboardLayoutMode: 'split',
+        sidebarCollapsed: false,
+        matrixTransposed: false,
+        matrixExpanded: false,
+        historyLayoutMode: 'grid',
+        refBoardFilter: 'all',
+        globalNotes: '',
+        papers: [],
+        history: [],
+        folders: [
+          { id: 'folder-1', name: 'Theory X (Click + Group to Add)', expanded: true, paperIds: [] },
+        ],
+        activeFlowchartBoard: 'theoretical',
+        selectedNodeId: null,
+        connectMode: false,
+        connectSourceId: null,
+        fcZoom: 1,
+        fcPan: { x: 0, y: 0 },
+        flowcharts: {
+          theoretical: {
+            nodes: [
+              { id: 'n1', type: 'concept', title: 'Core Construct A', desc: 'Click to rename or link to an uploaded PDF tab', x: 80, y: 70, color: 'terracotta', paperId: '' },
+              { id: 'n2', type: 'concept', title: 'Mediating Mechanism B', desc: 'Drag card header to move, or click "+ Concept" above', x: 420, y: 70, color: 'sage', paperId: '' },
+            ],
+            edges: [
+              { id: 'e1', from: 'n1', to: 'n2', label: 'influences' },
+            ],
+          },
+          design: {
+            nodes: [
+              { id: 'd1', type: 'question', title: 'Central Research Question', desc: 'Define your primary inquiry here', x: 100, y: 80, color: 'amber', paperId: '' },
+            ],
+            edges: [],
+          },
+          methodology: {
+            nodes: [
+              { id: 'm1', type: 'process', title: 'Phase 1: Data Collection', desc: 'Outline sampling, corpus, or instruments', x: 80, y: 90, color: 'cobalt', paperId: '' },
+            ],
+            edges: [],
+          },
+        },
+      };
+
+      // -----------------------------------------------------------------------
+      // PERSISTENCE & HISTORY SYNC
+      // -----------------------------------------------------------------------
+      function saveState() {
+        try {
+          const serializable = {
+            ...state,
+            papers: state.papers.map((p) => ({
+              ...p,
+              fileData: undefined,
+            })),
+          };
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(serializable));
+        } catch (err) {
+          console.warn('Could not persist state to localStorage:', err);
+        }
+      }
+
+      function loadState() {
+        try {
+          const embeddedEl = document.getElementById('folio-bundled-state');
+          const raw = localStorage.getItem(STORAGE_KEY) || (embeddedEl && embeddedEl.textContent.trim());
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            state = { ...state, ...parsed };
+          }
+        } catch (err) {
+          console.warn('Failed to parse saved state:', err);
+        }
+        if (!Array.isArray(state.papers)) {
+          state.papers = [];
+        }
+        syncPapersToHistory();
+      }
+
+      function syncPapersToHistory() {
+        const todayStr = new Date().toISOString().slice(0, 10);
+        const activeIds = new Set(state.papers.map((p) => p.id));
+
+        // Mark closed papers in history
+        state.history.forEach((h) => {
+          h.status = activeIds.has(h.paperId) ? 'active' : 'closed';
+        });
+
+        // Ensure every active paper is represented in history
+        state.papers.forEach((p) => {
+          const existing = state.history.find((h) => h.paperId === p.id);
+          if (existing) {
+            existing.title = p.title;
+            existing.topic = p.topic || p.simplifiedTitle || p.title;
+            existing.color = p.color;
+            existing.status = 'active';
+          } else {
+            state.history.unshift({
+              id: 'hist-' + p.id,
+              paperId: p.id,
+              title: p.title,
+              topic: p.topic || p.simplifiedTitle || p.title,
+              color: p.color,
+              date: todayStr,
+              status: 'active',
+            });
+          }
+        });
+      }
+
+      // -----------------------------------------------------------------------
+      // HELPERS
+      // -----------------------------------------------------------------------
+      function getTabColorObj(colorId) {
+        return TAB_COLORS.find((c) => c.id === colorId) || TAB_COLORS[0];
+      }
+
+      function escapeHtml(str) {
+        return String(str || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function showToast(msg) {
+        const el = document.getElementById('toast-banner');
+        if (!el) return;
+        el.textContent = msg;
+        el.classList.remove('hidden');
+        clearTimeout(el._timer);
+        el._timer = setTimeout(() => el.classList.add('hidden'), 2600);
+      }
+
+      // -----------------------------------------------------------------------
+      // TAB NAVIGATION & LAYOUT SWITCHING
+      // -----------------------------------------------------------------------
+      function switchTab(tabId) {
+        state.activeTabId = tabId;
+        const dashView = document.getElementById('view-dashboard');
+        const readerView = document.getElementById('view-reader');
+        const dashBtn = document.getElementById('tab-btn-dashboard');
+
+        if (tabId === 'dashboard') {
+          dashView.classList.remove('hidden');
+          readerView.classList.add('hidden');
+          dashBtn.className =
+            'flex items-center gap-2 px-3 py-1.5 rounded-t-lg text-xs font-semibold transition-all border border-b-0 bg-surface text-ink border-hairline shadow-sm shrink-0 cursor-pointer';
+          renderDashboard();
+        } else {
+          dashView.classList.add('hidden');
+          readerView.classList.remove('hidden');
+          dashBtn.className =
+            'flex items-center gap-2 px-3 py-1.5 rounded-t-lg text-xs font-medium transition-all border border-transparent text-muted hover:text-ink hover:bg-white/60 shrink-0 cursor-pointer';
+          renderReaderView();
+        }
+        renderTabStrip();
+        saveState();
+      }
+
+      function setDashboardLayoutMode(mode) {
+        state.dashboardLayoutMode = mode;
+        const modes = ['split', 'flowchart', 'overview', 'references', 'history'];
+        modes.forEach((m) => {
+          const btn = document.getElementById('mode-btn-' + m);
+          if (!btn) return;
+          if (m === mode) {
+            btn.className =
+              'px-3 py-1.5 rounded-lg text-xs font-semibold transition-all bg-ink text-white shadow-sm whitespace-nowrap cursor-pointer';
+          } else {
+            btn.className =
+              'px-3 py-1.5 rounded-lg text-xs font-medium text-muted hover:text-ink transition-all whitespace-nowrap cursor-pointer';
+          }
+        });
+
+        const secFlow = document.getElementById('dashboard-flowchart-section');
+        const secOver = document.getElementById('dashboard-overview-section');
+        const secRefs = document.getElementById('dashboard-references-section');
+        const secHist = document.getElementById('dashboard-history-section');
+
+        secFlow.classList.toggle('hidden', !(mode === 'split' || mode === 'flowchart'));
+        secOver.classList.toggle('hidden', !(mode === 'split' || mode === 'overview'));
+        secRefs.classList.toggle('hidden', !(mode === 'split' || mode === 'references'));
+        secHist.classList.toggle('hidden', mode !== 'history');
+
+        if (mode === 'split' || mode === 'flowchart') {
+          renderFlowchartCanvas();
+        }
+        saveState();
+      }
+
+      function toggleCorpusSidebar() {
+        state.sidebarCollapsed = !state.sidebarCollapsed;
+        const aside = document.getElementById('corpus-sidebar');
+        if (!aside) return;
+        if (state.sidebarCollapsed) {
+          aside.classList.add('w-0', 'border-r-0', 'opacity-0');
+          aside.classList.remove('w-72');
+        } else {
+          aside.classList.remove('w-0', 'border-r-0', 'opacity-0');
+          aside.classList.add('w-72');
+        }
+        saveState();
+      }
+
+      function renderTabStrip() {
+        const strip = document.getElementById('paper-tabs-strip');
+        const countBadge = document.getElementById('badge-paper-count');
+        if (countBadge) countBadge.textContent = state.papers.length;
+        if (!strip) return;
+
+        strip.innerHTML = state.papers
+          .map((p) => {
+            const c = getTabColorObj(p.color);
+            const isActive = state.activeTabId === p.id;
+            return `
+              <div
+                onclick="switchTab('${p.id}')"
+                style="background-color: ${isActive ? '#FFFFFF' : c.bg}; border-color: ${isActive ? c.hex : c.border};"
+                class="group flex items-center gap-2 px-3 py-1.5 rounded-t-lg border text-xs max-w-[210px] shrink-0 cursor-pointer transition-all ${
+                  isActive ? 'font-semibold text-ink shadow-sm -mb-px' : 'font-medium text-ink/80 hover:opacity-95'
+                }"
+              >
+                <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background-color: ${c.hex};"></span>
+                <span class="truncate">${escapeHtml(p.simplifiedTitle || p.title)}</span>
+                <button
+                  onclick="event.stopPropagation(); closePaperTab('${p.id}')"
+                  class="ml-auto opacity-50 hover:opacity-100 hover:text-rose-600 px-1 rounded cursor-pointer"
+                  title="Close Tab"
+                >×</button>
+              </div>
+            `;
+          })
+          .join('');
+      }
+
+      function closePaperTab(paperId) {
+        state.papers = state.papers.filter((p) => p.id !== paperId);
+        syncPapersToHistory();
+        if (state.activeTabId === paperId) {
+          switchTab('dashboard');
+        } else {
+          renderAllTabsAndViews();
+        }
+        saveState();
+        showToast('Paper closed (archived in Paper History)');
+      }
+
+      // -----------------------------------------------------------------------
+      // PDF UPLOAD & RENDERING (PDF.JS + SAMPLE DOCUMENT FALLBACK)
+      // -----------------------------------------------------------------------
+      async function handlePDFFiles(fileList) {
+        const files = Array.from(fileList || []).filter(
+          (f) => f.type === 'application/pdf' || f.name.toLowerCase().endsWith('.pdf')
+        );
+        if (!files.length) return;
+
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          const arrayBuffer = await file.arrayBuffer();
+          const id = 'pdf-' + Date.now() + '-' + i;
+          const colorObj = TAB_COLORS[(state.papers.length + i) % TAB_COLORS.length];
+          const cleanName = file.name.replace(/\.pdf$/i, '');
+
+          let numPages = 1;
+          if (window.pdfjsLib) {
+            try {
+              const loadingTask = window.pdfjsLib.getDocument({ data: arrayBuffer.slice(0) });
+              const pdfDoc = await loadingTask.promise;
+              pdfDocCache.set(id, pdfDoc);
+              numPages = pdfDoc.numPages;
+            } catch (err) {
+              console.error('PDF parse error:', err);
+            }
+          }
+
+          const newPaper = {
+            id,
+            title: cleanName,
+            authorYear: cleanName.slice(0, 28),
+            simplifiedTitle: cleanName.slice(0, 36),
+            topic: cleanName,
+            color: colorObj.id,
+            zoom: 1.2,
+            numPages,
+            isSample: false,
+            summary: '',
+            paraphrase: '',
+            highlights: [],
+          };
+
+          state.papers.push(newPaper);
+          syncPapersToHistory();
+          switchTab(id);
+        }
+        saveState();
+        showToast(`Opened ${files.length} PDF tab(s)`);
+      }
+
+      async function renderReaderView() {
+        const paper = state.papers.find((p) => p.id === state.activeTabId);
+        if (!paper) return;
+
+        const c = getTabColorObj(paper.color);
+        document.getElementById('reader-color-dot').style.backgroundColor = c.hex;
+        document.getElementById('reader-paper-title').textContent = paper.title;
+        document.getElementById('reader-zoom-level').textContent = Math.round((paper.zoom || 1.2) * 100) + '%';
+        document.getElementById('reader-page-indicator').textContent = `Pages: ${paper.numPages || 1}`;
+        document.getElementById('reader-summary-input').value = paper.summary || '';
+
+        // Color picker dots
+        document.getElementById('reader-color-picker').innerHTML = TAB_COLORS.map(
+          (col) => `
+            <button
+              onclick="changePaperColor('${paper.id}', '${col.id}')"
+              style="background-color: ${col.hex};"
+              class="w-4 h-4 rounded-full transition-transform cursor-pointer ${
+                paper.color === col.id ? 'ring-2 ring-offset-1 ring-ink scale-110' : 'opacity-70 hover:opacity-100'
+              }"
+              title="${col.label}"
+            ></button>
+          `
+        ).join('');
+
+        renderReaderHighlightsList(paper);
+
+        const container = document.getElementById('pdf-pages-container');
+        container.innerHTML = '';
+
+        const pdfDoc = pdfDocCache.get(paper.id);
+        if (pdfDoc) {
+          for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+            const page = await pdfDoc.getPage(pageNum);
+            const viewport = page.getViewport({ scale: paper.zoom || 1.2 });
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'pdf-page-wrapper';
+            wrapper.dataset.page = pageNum;
+            wrapper.style.width = viewport.width + 'px';
+            wrapper.style.height = viewport.height + 'px';
+
+            const canvas = document.createElement('canvas');
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+            wrapper.appendChild(canvas);
+
+            const hlLayer = document.createElement('div');
+            hlLayer.className = 'highlight-layer';
+            wrapper.appendChild(hlLayer);
+
+            const textLayerDiv = document.createElement('div');
+            textLayerDiv.className = 'textLayer';
+            wrapper.appendChild(textLayerDiv);
+
+            container.appendChild(wrapper);
+
+            await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+            const textContent = await page.getTextContent();
+            if (window.pdfjsLib && window.pdfjsLib.renderTextLayer) {
+              window.pdfjsLib.renderTextLayer({
+                textContentSource: textContent,
+                container: textLayerDiv,
+                viewport,
+                textDivs: [],
+              });
+            }
+            paintPageHighlights(wrapper, paper, pageNum);
+          }
+        } else {
+          // Sample / Built-in Paper Interactive Manuscript Pages
+          const total = Math.min(paper.numPages || 4, 6);
+          for (let pageNum = 1; pageNum <= total; pageNum++) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'pdf-page-wrapper p-10 select-text';
+            wrapper.dataset.page = pageNum;
+            wrapper.style.maxWidth = Math.round(680 * (paper.zoom || 1.15)) + 'px';
+            wrapper.style.minHeight = '760px';
+
+            const pageHighlights = paper.highlights.filter((h) => h.page === pageNum);
+            wrapper.innerHTML = `
+              <div class="flex items-center justify-between text-[11px] font-mono text-muted border-b border-hairline pb-3 mb-6">
+                <span>${escapeHtml(paper.authorYear || paper.title)}</span>
+                <span>Page ${pageNum} of ${paper.numPages}</span>
+              </div>
+              <h3 class="font-serif text-xl font-semibold text-ink mb-4">
+                ${pageNum === 1 ? escapeHtml(paper.title) : `Section ${pageNum}. Empirical & Theoretical Analysis`}
+              </h3>
+              <div class="space-y-4 font-serif text-[15px] leading-relaxed text-ink/90">
+                <p>
+                  ${escapeHtml(paper.summary || 'Select any sentence on this page to highlight a Claim, Critique, Methodology step, or Core Quote directly into your Synthesis Matrix.')}
+                </p>
+                ${pageHighlights
+                  .map((h) => {
+                    const st = HIGHLIGHT_TYPES[h.type] || HIGHLIGHT_TYPES.claim;
+                    return `<p class="p-2 rounded-md" style="background-color: ${st.bg};">${escapeHtml(h.text)}</p>`;
+                  })
+                  .join('')}
+                <p>
+                  Researchers examining complex socio-technical infrastructures must account for both formal governance rules and emergent day-to-day workarounds. By combining structured annotation with cross-paper matrix comparison, subtle methodological tensions become transparent across studies.
+                </p>
+                <p class="text-xs font-sans text-muted italic pt-4">
+                  Tip: Drag across any text above to attach a color-coded highlight and margin note, or click "+ Open PDF" in the top bar to load your own local PDF files.
+                </p>
+              </div>
+            `;
+            container.appendChild(wrapper);
+          }
+        }
+      }
+
+      function paintPageHighlights(wrapper, paper, pageNum) {
+        const hlLayer = wrapper.querySelector('.highlight-layer');
+        if (!hlLayer) return;
+        hlLayer.innerHTML = '';
+        paper.highlights
+          .filter((h) => h.page === pageNum)
+          .forEach((h) => {
+            const st = HIGHLIGHT_TYPES[h.type] || HIGHLIGHT_TYPES.claim;
+            (h.rects || []).forEach((r) => {
+              const div = document.createElement('div');
+              div.className = 'pdf-highlight-rect';
+              div.style.backgroundColor = st.bg;
+              div.style.top = r.top + '%';
+              div.style.left = r.left + '%';
+              div.style.width = r.width + '%';
+              div.style.height = r.height + '%';
+              div.title = `${st.label}: ${h.text}`;
+              hlLayer.appendChild(div);
+            });
+          });
+      }
+
+      function handleTextSelectionPopover() {
+        const sel = window.getSelection();
+        const popover = document.getElementById('selection-popover');
+        if (!sel || sel.isCollapsed || state.activeTabId === 'dashboard') {
+          popover.classList.add('hidden');
+          return;
+        }
+        const text = sel.toString().trim();
+        if (text.length < 4) {
+          popover.classList.add('hidden');
+          return;
+        }
+        const range = sel.getRangeAt(0);
+        const containerNode =
+          range.commonAncestorContainer.nodeType === 1
+            ? range.commonAncestorContainer
+            : range.commonAncestorContainer.parentElement;
+        const pageWrapper = containerNode && containerNode.closest('.pdf-page-wrapper');
+        if (!pageWrapper) {
+          popover.classList.add('hidden');
+          return;
+        }
+
+        const pageRect = pageWrapper.getBoundingClientRect();
+        const clientRects = Array.from(range.getClientRects()).map((cr) => ({
+          top: ((cr.top - pageRect.top) / pageRect.height) * 100,
+          left: ((cr.left - pageRect.left) / pageRect.width) * 100,
+          width: (cr.width / pageRect.width) * 100,
+          height: (cr.height / pageRect.height) * 100,
+        }));
+
+        const bounding = range.getBoundingClientRect();
+        pendingSelection = {
+          paperId: state.activeTabId,
+          page: Number(pageWrapper.dataset.page) || 1,
+          text,
+          rects: clientRects,
+        };
+
+        popover.style.top = Math.max(12, bounding.top - 44) + 'px';
+        popover.style.left = Math.max(12, bounding.left) + 'px';
+        popover.classList.remove('hidden');
+      }
+
+      function commitTextHighlight(type) {
+        if (!pendingSelection) return;
+        const paper = state.papers.find((p) => p.id === pendingSelection.paperId);
+        if (!paper) return;
+
+        paper.highlights.push({
+          id: 'hl-' + Date.now(),
+          page: pendingSelection.page,
+          type,
+          text: pendingSelection.text,
+          note: '',
+          rects: pendingSelection.rects,
+        });
+
+        window.getSelection().removeAllRanges();
+        document.getElementById('selection-popover').classList.add('hidden');
+        pendingSelection = null;
+        saveState();
+        renderReaderView();
+        showToast(`Saved ${HIGHLIGHT_TYPES[type].label} on Page ${paper.highlights[paper.highlights.length - 1].page}`);
+      }
+
+      function renderReaderHighlightsList(paper) {
+        const list = document.getElementById('reader-highlights-list');
+        const countEl = document.getElementById('reader-highlight-count');
+        if (countEl) countEl.textContent = paper.highlights.length;
+        if (!list) return;
+
+        if (!paper.highlights.length) {
+          list.innerHTML = `<div class="text-xs text-muted bg-canvas border border-hairline rounded-xl p-3">No highlights yet. Select any passage in the document to tag a Claim, Critique, Method, or Quote.</div>`;
+          return;
+        }
+
+        list.innerHTML = paper.highlights
+          .map((h) => {
+            const st = HIGHLIGHT_TYPES[h.type] || HIGHLIGHT_TYPES.claim;
+            return `
+              <div class="p-3 rounded-xl border border-hairline bg-canvas space-y-2">
+                <div class="flex items-center justify-between">
+                  <span style="background-color: ${st.badgeBg}; color: ${st.badgeText};" class="px-2 py-0.5 rounded-full text-[10px] font-semibold">
+                    ${st.label} · p.${h.page}
+                  </span>
+                  <button onclick="deleteHighlight('${paper.id}', '${h.id}')" class="text-[11px] text-muted hover:text-rose-600 cursor-pointer">Delete</button>
+                </div>
+                <p class="text-xs font-serif text-ink leading-relaxed">"${escapeHtml(h.text)}"</p>
+                <input
+                  type="text"
+                  value="${escapeHtml(h.note || '')}"
+                  oninput="updateHighlightNote('${paper.id}', '${h.id}', this.value)"
+                  placeholder="Add margin note..."
+                  class="w-full px-2 py-1 text-[11px] rounded-lg border border-hairline bg-surface focus:outline-none focus:border-ink"
+                />
+              </div>
+            `;
+          })
+          .join('');
+      }
+
+      function updateHighlightNote(paperId, hlId, val) {
+        const p = state.papers.find((x) => x.id === paperId);
+        const h = p && p.highlights.find((x) => x.id === hlId);
+        if (h) {
+          h.note = val;
+          saveState();
+        }
+      }
+
+      function deleteHighlight(paperId, hlId) {
+        const p = state.papers.find((x) => x.id === paperId);
+        if (!p) return;
+        p.highlights = p.highlights.filter((x) => x.id !== hlId);
+        saveState();
+        renderReaderView();
+      }
+
+      function changePaperColor(paperId, colorId) {
+        const p = state.papers.find((x) => x.id === paperId);
+        if (!p) return;
+        p.color = colorId;
+        syncPapersToHistory();
+        saveState();
+        renderAllTabsAndViews();
+      }
+
+      function changeZoom(delta) {
+        const p = state.papers.find((x) => x.id === state.activeTabId);
+        if (!p) return;
+        p.zoom = Math.min(2.2, Math.max(0.7, (p.zoom || 1.2) + delta));
+        saveState();
+        renderReaderView();
+      }
+
+      function updateCurrentPaperSummary(val) {
+        const p = state.papers.find((x) => x.id === state.activeTabId);
+        if (p) {
+          p.summary = val;
+          saveState();
+        }
+      }
+
+      function autoSummarizeCurrentPaper() {
+        const p = state.papers.find((x) => x.id === state.activeTabId);
+        if (!p) return;
+        const claims = p.highlights.filter((h) => h.type === 'claim').map((h) => h.text);
+        p.summary = claims.length
+          ? `Key synthesis from ${p.highlights.length} annotations: ${claims.join(' ')}`
+          : `Executive overview of "${p.title}": Investigates core conceptual mechanisms and empirical trade-offs across ${p.numPages} pages.`;
+        document.getElementById('reader-summary-input').value = p.summary;
+        saveState();
+        showToast('Summary updated from paper highlights');
+      }
+
+      function jumpToHighlightInPaper(paperId, pageNum) {
+        switchTab(paperId);
+        setTimeout(() => {
+          const targetPage = document.querySelector(`.pdf-page-wrapper[data-page="${pageNum}"]`);
+          if (targetPage) {
+            targetPage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          showToast(`Jumped to Page ${pageNum}`);
+        }, 120);
+      }
+
+      // -----------------------------------------------------------------------
+      // SYNTHESIS BOARD RENDERING (SIDEBAR, OVERVIEW, MATRIX, HISTORY)
+      // -----------------------------------------------------------------------
+      function renderDashboard() {
+        renderCorpusSidebar();
+        document.getElementById('global-synthesis-notes').value = state.globalNotes || '';
+        renderPaperSummaryCards();
+        renderReferenceBoardAndMatrix();
+        renderPaperHistory();
+        renderFlowchartCanvas();
+      }
+
+      function renderCorpusSidebar() {
+        const box = document.getElementById('corpus-sidebar-content');
+        if (!box) return;
+
+        const foldersHtml = state.folders
+          .map((folder) => {
+            const folderPapers = folder.paperIds
+              .map((pid) => state.papers.find((p) => p.id === pid))
+              .filter(Boolean);
+            return `
+              <div class="border border-hairline rounded-xl bg-canvas overflow-hidden">
+                <div
+                  onclick="toggleFolderExpand('${folder.id}')"
+                  class="px-2.5 py-2 flex items-center justify-between cursor-pointer hover:bg-stone-200/50"
+                >
+                  <div class="flex items-center gap-1.5 min-w-0">
+                    <span class="text-[10px] text-muted">${folder.expanded ? '▼' : '▶'}</span>
+                    <span class="text-xs font-semibold text-ink truncate">${escapeHtml(folder.name)}</span>
+                  </div>
+                  <span class="text-[10px] font-mono px-1.5 py-0.2 rounded bg-surface border border-hairline text-muted">
+                    ${folderPapers.length}
+                  </span>
+                </div>
+                ${
+                  folder.expanded
+                    ? `<div class="px-2.5 pb-2 pt-1 space-y-1 border-t border-hairline/70">
+                        ${
+                          folderPapers.length
+                            ? folderPapers
+                                .map((p) => {
+                                  const c = getTabColorObj(p.color);
+                                  return `
+                                    <div
+                                      onclick="switchTab('${p.id}')"
+                                      class="flex items-center gap-2 px-2 py-1 rounded-lg hover:bg-surface text-xs cursor-pointer"
+                                    >
+                                      <span class="w-2 h-2 rounded-full shrink-0" style="background-color:${c.hex};"></span>
+                                      <span class="truncate text-ink/90">${escapeHtml(p.simplifiedTitle || p.title)}</span>
+                                    </div>
+                                  `;
+                                })
+                                .join('')
+                            : `<div class="text-[11px] text-muted italic py-1">Empty folder — assign papers below</div>`
+                        }
+                      </div>`
+                    : ''
+                }
+              </div>
+            `;
+          })
+          .join('');
+
+        const allPapersHtml = state.papers.length
+          ? state.papers
+              .map((p) => {
+                const c = getTabColorObj(p.color);
+                return `
+                  <div class="p-2 rounded-xl border border-hairline bg-canvas flex items-center justify-between gap-2">
+                    <div onclick="switchTab('${p.id}')" class="flex items-center gap-2 min-w-0 cursor-pointer">
+                      <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background-color:${c.hex};"></span>
+                      <span class="text-xs font-medium text-ink truncate">${escapeHtml(p.simplifiedTitle || p.title)}</span>
+                    </div>
+                    <select
+                      onchange="assignPaperToFolder('${p.id}', this.value)"
+                      class="text-[10px] bg-surface border border-hairline rounded px-1 py-0.5 text-muted max-w-[82px]"
+                      title="Assign to Theory Folder"
+                    >
+                      <option value="">+ Group</option>
+                      ${state.folders
+                        .map((f) => `<option value="${f.id}">${escapeHtml(f.name)}</option>`)
+                        .join('')}
+                    </select>
+                  </div>
+                `;
+              })
+              .join('')
+          : `<div class="p-3 rounded-xl border border-dashed border-hairline bg-canvas text-[11px] text-muted leading-relaxed">
+              No PDFs uploaded yet. Click <strong>+ Open PDF</strong> at the top right or drag PDF files anywhere onto this window.
+            </div>`;
+
+        box.innerHTML = `
+          <div class="space-y-2">
+            <div class="text-[10px] font-bold uppercase tracking-wider text-muted">Theory &amp; Topic Folders</div>
+            ${foldersHtml}
+          </div>
+          <div class="space-y-2 pt-2 border-t border-hairline">
+            <div class="text-[10px] font-bold uppercase tracking-wider text-muted">All Open PDFs (${state.papers.length})</div>
+            ${allPapersHtml}
+          </div>
+        `;
+      }
+
+      function createTheoryFolder() {
+        const name = 'Theory Group ' + (state.folders.length + 1);
+        state.folders.push({
+          id: 'folder-' + Date.now(),
+          name,
+          expanded: true,
+          paperIds: [],
+        });
+        saveState();
+        renderCorpusSidebar();
+        showToast(`Created "${name}"`);
+      }
+
+      function toggleFolderExpand(folderId) {
+        const f = state.folders.find((x) => x.id === folderId);
+        if (f) {
+          f.expanded = !f.expanded;
+          saveState();
+          renderCorpusSidebar();
+        }
+      }
+
+      function assignPaperToFolder(paperId, folderId) {
+        if (!folderId) return;
+        const f = state.folders.find((x) => x.id === folderId);
+        if (f && !f.paperIds.includes(paperId)) {
+          f.paperIds.push(paperId);
+          f.expanded = true;
+          saveState();
+          renderCorpusSidebar();
+          showToast(`Added paper to ${f.name}`);
+        }
+      }
+
+      function updateGlobalNotes(val) {
+        state.globalNotes = val;
+        saveState();
+      }
+
+      function synthesizeCrossPaperThemes() {
+        const allClaims = state.papers.flatMap((p) =>
+          p.highlights.filter((h) => h.type === 'claim').map((h) => `[${p.authorYear || p.title}] ${h.text}`)
+        );
+        state.globalNotes = allClaims.length
+          ? `Synthesized Core Claims Across ${state.papers.length} Open Tabs:\n• ` + allClaims.join('\n• ')
+          : 'Open or highlight claims across your PDF tabs to synthesize cross-paper patterns automatically.';
+        document.getElementById('global-synthesis-notes').value = state.globalNotes;
+        saveState();
+        showToast('Synthesized cross-paper themes');
+      }
+
+      function renderPaperSummaryCards() {
+        const grid = document.getElementById('paper-cards-grid');
+        if (!grid) return;
+
+        if (!state.papers.length) {
+          grid.innerHTML = `
+            <div class="col-span-full bg-surface border-2 border-dashed border-hairline rounded-2xl p-6 sm:p-8 shadow-sm space-y-5">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-hairline pb-4">
+                <div>
+                  <span class="inline-block px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[11px] font-semibold mb-1.5">
+                    Getting Started Guide
+                  </span>
+                  <h3 class="font-serif text-xl font-semibold text-ink">Welcome to Folio — Your Research Synthesis Workspace</h3>
+                  <p class="text-xs text-muted mt-0.5">Follow these 4 steps to read, annotate, and synthesize your downloaded research papers:</p>
+                </div>
+                <button
+                  onclick="document.getElementById('pdf-file-input').click()"
+                  class="px-4 py-2.5 rounded-xl bg-ink hover:bg-stone-800 text-white text-xs font-semibold shadow-sm shrink-0 cursor-pointer transition-colors"
+                >
+                  + Open Your First PDF
+                </button>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 text-left">
+                <div class="p-3.5 rounded-xl bg-canvas border border-hairline space-y-1">
+                  <div class="text-xs font-bold text-ink">1. Open &amp; Color-Code PDFs</div>
+                  <p class="text-[11px] text-muted leading-relaxed">
+                    Click <strong>+ Open PDF</strong> (or drag &amp; drop files) to open multiple papers as browser tabs and assign each a distinct color tag.
+                  </p>
+                </div>
+                <div class="p-3.5 rounded-xl bg-canvas border border-hairline space-y-1">
+                  <div class="text-xs font-bold text-ink">2. Highlight Claims &amp; Critiques</div>
+                  <p class="text-[11px] text-muted leading-relaxed">
+                    Select any text inside a PDF tab to tag it as a <strong>Claim</strong>, <strong>Critique</strong>, <strong>Method</strong>, or <strong>Quote</strong> with margin notes.
+                  </p>
+                </div>
+                <div class="p-3.5 rounded-xl bg-canvas border border-hairline space-y-1">
+                  <div class="text-xs font-bold text-ink">3. Build Your Synthesis Matrix</div>
+                  <p class="text-[11px] text-muted leading-relaxed">
+                    Switch to <strong>Reference Board &amp; Matrix</strong> to compare papers side-by-side, draft paraphrases, and click citations to jump straight to that PDF page.
+                  </p>
+                </div>
+                <div class="p-3.5 rounded-xl bg-canvas border border-hairline space-y-1">
+                  <div class="text-xs font-bold text-ink">4. Map Frameworks &amp; Folders</div>
+                  <p class="text-[11px] text-muted leading-relaxed">
+                    Drag cards in the <strong>Framework Flowchart</strong> above to model your theoretical or methodology design, and group PDFs into Theory Folders on the left.
+                  </p>
+                </div>
+              </div>
+            </div>
+          `;
+          return;
+        }
+
+        grid.innerHTML = state.papers
+          .map((p) => {
+            const c = getTabColorObj(p.color);
+            return `
+              <div class="bg-surface border border-hairline rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-3" style="border-top: 4px solid ${c.hex};">
+                <div class="space-y-1.5">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="text-[11px] font-mono px-2 py-0.5 rounded-full" style="background-color:${c.bg}; color:${c.hex};">
+                      ${escapeHtml(p.authorYear || 'Open PDF')}
+                    </span>
+                    <button onclick="switchTab('${p.id}')" class="text-xs font-semibold text-ink hover:underline cursor-pointer">
+                      Open Tab ↗
+                    </button>
+                  </div>
+                  <h3 class="font-serif font-semibold text-base text-ink leading-snug">${escapeHtml(p.title)}</h3>
+                  <p class="text-xs text-muted leading-relaxed">
+                    ${escapeHtml(p.summary || 'No executive summary yet. Open the tab to annotate or auto-summarize.')}
+                  </p>
+                </div>
+                <div class="pt-2 border-t border-hairline flex items-center justify-between text-[11px] text-muted">
+                  <span>${p.highlights.length} highlight(s)</span>
+                  <span>${p.numPages} pages</span>
+                </div>
+              </div>
+            `;
+          })
+          .join('');
+      }
+
+      // -----------------------------------------------------------------------
+      // COMPARATIVE SYNTHESIS CHART (5 ROWS, TRANSPOSABLE) & REFERENCE BOARD
+      // -----------------------------------------------------------------------
+      function toggleMatrixTranspose() {
+        state.matrixTransposed = !state.matrixTransposed;
+        saveState();
+        renderReferenceBoardAndMatrix();
+      }
+
+      function toggleMatrixExpand() {
+        state.matrixExpanded = !state.matrixExpanded;
+        const matrixCard = document.getElementById('synthesis-matrix-card');
+        const citationCard = document.getElementById('citation-index-card');
+        const expandBtn = document.getElementById('btn-expand-matrix');
+
+        if (matrixCard && citationCard && expandBtn) {
+          if (state.matrixExpanded) {
+            matrixCard.classList.remove('xl:col-span-8');
+            matrixCard.classList.add('xl:col-span-12');
+            citationCard.classList.remove('xl:col-span-4');
+            citationCard.classList.add('xl:col-span-12');
+            expandBtn.innerHTML = '<span>⤡ Restore Split Width</span>';
+            expandBtn.classList.add('bg-ink', 'text-white', 'border-ink');
+            expandBtn.classList.remove('bg-surface', 'text-ink', 'border-hairline');
+          } else {
+            matrixCard.classList.remove('xl:col-span-12');
+            matrixCard.classList.add('xl:col-span-8');
+            citationCard.classList.remove('xl:col-span-12');
+            citationCard.classList.add('xl:col-span-4');
+            expandBtn.innerHTML = '<span>⤢ Expand Table</span>';
+            expandBtn.classList.remove('bg-ink', 'text-white', 'border-ink');
+            expandBtn.classList.add('bg-surface', 'text-ink', 'border-hairline');
+          }
+        }
+        saveState();
+      }
+
+      function setRefBoardFilter(filter) {
+        state.refBoardFilter = filter;
+        ['all', 'claim', 'critique', 'methodology'].forEach((f) => {
+          const btn = document.getElementById('ref-filter-' + f);
+          if (!btn) return;
+          btn.className =
+            f === filter
+              ? 'px-2.5 py-1 rounded-lg bg-ink text-white font-medium cursor-pointer'
+              : 'px-2.5 py-1 rounded-lg text-muted hover:text-ink cursor-pointer';
+        });
+        renderReferenceBoardAndMatrix();
+      }
+
+      function updatePaperMatrixField(paperId, field, value) {
+        const p = state.papers.find((x) => x.id === paperId);
+        if (p) {
+          p[field] = value;
+          saveState();
+          renderTabStrip();
+        }
+      }
+
+      function draftPaperParaphrase(paperId) {
+        const p = state.papers.find((x) => x.id === paperId);
+        if (!p) return;
+        const firstClaim = p.highlights.find((h) => h.type === 'claim');
+        p.paraphrase = firstClaim
+          ? `According to ${p.authorYear || p.title}, ${firstClaim.text.charAt(0).toLowerCase() + firstClaim.text.slice(1)}`
+          : `${p.authorYear || p.title} investigates ${p.simplifiedTitle || p.title}, highlighting key analytical tensions for the current study.`;
+        saveState();
+        renderReferenceBoardAndMatrix();
+        showToast('Drafted academic paraphrase');
+      }
+
+      function renderReferenceBoardAndMatrix() {
+        const matrixBox = document.getElementById('synthesis-matrix-container');
+        const refList = document.getElementById('reference-library-list');
+        const refBadge = document.getElementById('ref-count-badge');
+        if (!matrixBox || !refList) return;
+
+        if (!state.papers.length) {
+          matrixBox.innerHTML = `
+            <div class="p-8 text-center space-y-2">
+              <div class="text-xs font-semibold text-ink">Your Comparative Synthesis Table is Ready</div>
+              <p class="text-[11px] text-muted max-w-md mx-auto leading-relaxed">
+                Once you open one or more PDFs, each paper will appear here with rows for <strong>Author &amp; Year</strong>, <strong>Title (Simplified)</strong>, <strong>Claims</strong>, <strong>Critique</strong>, and <strong>Paraphrase</strong>.
+              </p>
+            </div>
+          `;
+          if (refBadge) refBadge.textContent = '0 citations';
+          refList.innerHTML = `<div class="text-xs text-muted text-center py-8 leading-relaxed">Open a PDF tab and highlight text to build your clickable page-linked citation index.</div>`;
+          return;
+        }
+
+        const rowsMeta = [
+          { key: 'authorYear', label: 'Author & Year', bg: 'bg-[#FAF9F7]' },
+          { key: 'simplifiedTitle', label: 'Title (Simplified)', bg: 'bg-surface' },
+          { key: 'claims', label: 'Claims', bg: 'bg-amber-50/60' },
+          { key: 'critique', label: 'Critique', bg: 'bg-sky-50/60' },
+          { key: 'paraphrase', label: 'Paraphrase', bg: 'bg-emerald-50/60' },
+        ];
+
+        const renderCellContent = (paper, key) => {
+          const c = getTabColorObj(paper.color);
+          if (key === 'authorYear') {
+            return `
+              <div class="flex items-center justify-between gap-2">
+                <span class="inline-flex items-center gap-1.5 font-semibold text-xs text-ink">
+                  <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background-color:${c.hex};"></span>
+                  ${escapeHtml(paper.authorYear || paper.title)}
+                </span>
+                <button onclick="switchTab('${paper.id}')" class="text-[11px] font-mono text-muted hover:text-ink cursor-pointer">PDF ↗</button>
+              </div>
+            `;
+          }
+          if (key === 'simplifiedTitle') {
+            return `
+              <input
+                type="text"
+                value="${escapeHtml(paper.simplifiedTitle || paper.title)}"
+                oninput="updatePaperMatrixField('${paper.id}', 'simplifiedTitle', this.value)"
+                class="w-full text-xs font-serif font-medium text-ink bg-transparent border-b border-transparent focus:border-ink focus:outline-none"
+              />
+            `;
+          }
+          if (key === 'claims') {
+            const claims = paper.highlights.filter((h) => h.type === 'claim');
+            return claims.length
+              ? `<div class="space-y-1.5">${claims
+                  .map(
+                    (h) => `
+                    <div
+                      onclick="jumpToHighlightInPaper('${paper.id}', ${h.page})"
+                      class="p-2 rounded-lg bg-amber-100/80 hover:bg-amber-200/80 text-amber-950 text-[11px] leading-snug cursor-pointer transition-colors"
+                    >
+                      <span class="font-mono font-bold mr-1">[p.${h.page}]</span>${escapeHtml(h.text)}
+                    </div>`
+                  )
+                  .join('')}</div>`
+              : `<span class="text-[11px] text-muted italic">No claims highlighted</span>`;
+          }
+          if (key === 'critique') {
+            const critiques = paper.highlights.filter((h) => h.type === 'critique');
+            return critiques.length
+              ? `<div class="space-y-1.5">${critiques
+                  .map(
+                    (h) => `
+                    <div
+                      onclick="jumpToHighlightInPaper('${paper.id}', ${h.page})"
+                      class="p-2 rounded-lg bg-sky-100/80 hover:bg-sky-200/80 text-sky-950 text-[11px] leading-snug cursor-pointer transition-colors"
+                    >
+                      <span class="font-mono font-bold mr-1">[p.${h.page}]</span>${escapeHtml(h.text)}
+                    </div>`
+                  )
+                  .join('')}</div>`
+              : `<span class="text-[11px] text-muted italic">No critiques highlighted</span>`;
+          }
+          if (key === 'paraphrase') {
+            return `
+              <div class="space-y-1.5">
+                <textarea
+                  rows="3"
+                  oninput="updatePaperMatrixField('${paper.id}', 'paraphrase', this.value)"
+                  placeholder="Write academic paraphrase..."
+                  class="w-full text-[11px] leading-snug bg-white/80 border border-emerald-200 rounded-lg p-1.5 text-emerald-950 focus:outline-none focus:border-emerald-600"
+                >${escapeHtml(paper.paraphrase || '')}</textarea>
+                <button
+                  onclick="draftPaperParaphrase('${paper.id}')"
+                  class="text-[10px] font-medium text-emerald-800 hover:underline cursor-pointer"
+                >
+                  ✨ Draft Paraphrase
+                </button>
+              </div>
+            `;
+          }
+          return '';
+        };
+
+        if (!state.matrixTransposed) {
+          // Standard Orientation: 5 Rows (Author & Year, Title, Claims, Critique, Paraphrase) x N Paper Columns
+          matrixBox.innerHTML = `
+            <table class="w-full border-collapse text-left">
+              <tbody>
+                ${rowsMeta
+                  .map(
+                    (row) => `
+                    <tr class="border-b border-hairline ${row.bg}">
+                      <th class="p-3 text-xs font-semibold text-ink border-r border-hairline w-40 align-top sticky left-0 bg-inherit z-10">
+                        ${row.label}
+                      </th>
+                      ${state.papers
+                        .map(
+                          (p) => `
+                          <td class="p-3 border-r border-hairline min-w-[230px] align-top">
+                            ${renderCellContent(p, row.key)}
+                          </td>
+                        `
+                        )
+                        .join('')}
+                    </tr>
+                  `
+                  )
+                  .join('')}
+              </tbody>
+            </table>
+          `;
+        } else {
+          // Transposed Orientation: Papers as Rows x 5 Attributes as Columns
+          matrixBox.innerHTML = `
+            <table class="w-full border-collapse text-left">
+              <thead>
+                <tr class="border-b border-hairline bg-[#FAF9F7]">
+                  ${rowsMeta
+                    .map(
+                      (col) => `
+                      <th class="p-3 text-xs font-semibold text-ink border-r border-hairline min-w-[190px]">
+                        ${col.label}
+                      </th>
+                    `
+                    )
+                    .join('')}
+                </tr>
+              </thead>
+              <tbody>
+                ${state.papers
+                  .map(
+                    (p) => `
+                    <tr class="border-b border-hairline hover:bg-stone-50/70">
+                      ${rowsMeta
+                        .map(
+                          (col) => `
+                          <td class="p-3 border-r border-hairline align-top ${col.bg}">
+                            ${renderCellContent(p, col.key)}
+                          </td>
+                        `
+                        )
+                        .join('')}
+                    </tr>
+                  `
+                  )
+                  .join('')}
+              </tbody>
+            </table>
+          `;
+        }
+
+        // Direct Page-Linked Citation Index
+        const allCitations = state.papers.flatMap((p) =>
+          p.highlights
+            .filter((h) => state.refBoardFilter === 'all' || h.type === state.refBoardFilter)
+            .map((h) => ({ paper: p, highlight: h }))
+        );
+
+        if (refBadge) refBadge.textContent = `${allCitations.length} citation(s)`;
+
+        if (!allCitations.length) {
+          refList.innerHTML = `<div class="text-xs text-muted text-center py-8">No citations match this filter yet. Highlight text inside any PDF tab to populate your reference index.</div>`;
+          return;
+        }
+
+        refList.innerHTML = allCitations
+          .map(({ paper, highlight }) => {
+            const c = getTabColorObj(paper.color);
+            const st = HIGHLIGHT_TYPES[highlight.type] || HIGHLIGHT_TYPES.claim;
+            return `
+              <div
+                onclick="jumpToHighlightInPaper('${paper.id}', ${highlight.page})"
+                style="border-left: 4px solid ${c.hex}; background-color: ${c.bg};"
+                class="p-3 rounded-xl border border-hairline hover:shadow-md transition-all cursor-pointer space-y-1.5"
+              >
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-xs font-semibold text-ink truncate">${escapeHtml(paper.authorYear || paper.title)}</span>
+                  <div class="flex items-center gap-1.5 shrink-0">
+                    <span style="background-color:${st.badgeBg}; color:${st.badgeText};" class="px-2 py-0.5 rounded-full text-[10px] font-semibold">
+                      ${st.label}
+                    </span>
+                    <span class="px-2 py-0.5 rounded-md bg-surface border border-hairline font-mono text-[10px] font-semibold text-ink">
+                      p.${highlight.page} ↗
+                    </span>
+                  </div>
+                </div>
+                <p class="font-serif text-xs text-ink/90 leading-relaxed">"${escapeHtml(highlight.text)}"</p>
+              </div>
+            `;
+          })
+          .join('');
+      }
+
+      // -----------------------------------------------------------------------
+      // DATE-GROUPED PAPER & TOPIC READING HISTORY
+      // -----------------------------------------------------------------------
+      function setHistoryLayoutMode(mode) {
+        state.historyLayoutMode = mode;
+        const gridBtn = document.getElementById('hist-layout-grid');
+        const listBtn = document.getElementById('hist-layout-list');
+        if (gridBtn && listBtn) {
+          gridBtn.className =
+            mode === 'grid'
+              ? 'px-2.5 py-1 rounded-lg bg-ink text-white font-medium cursor-pointer'
+              : 'px-2.5 py-1 rounded-lg text-muted hover:text-ink font-medium cursor-pointer';
+          listBtn.className =
+            mode === 'list'
+              ? 'px-2.5 py-1 rounded-lg bg-ink text-white font-medium cursor-pointer'
+              : 'px-2.5 py-1 rounded-lg text-muted hover:text-ink font-medium cursor-pointer';
+        }
+        saveState();
+        renderPaperHistory();
+      }
+
+      function renderPaperHistory() {
+        const container = document.getElementById('paper-history-container');
+        if (!container) return;
+
+        // Ensure toggle button state matches persisted preference
+        const gridBtn = document.getElementById('hist-layout-grid');
+        const listBtn = document.getElementById('hist-layout-list');
+        if (gridBtn && listBtn) {
+          gridBtn.className =
+            state.historyLayoutMode === 'grid'
+              ? 'px-2.5 py-1 rounded-lg bg-ink text-white font-medium cursor-pointer'
+              : 'px-2.5 py-1 rounded-lg text-muted hover:text-ink font-medium cursor-pointer';
+          listBtn.className =
+            state.historyLayoutMode === 'list'
+              ? 'px-2.5 py-1 rounded-lg bg-ink text-white font-medium cursor-pointer'
+              : 'px-2.5 py-1 rounded-lg text-muted hover:text-ink font-medium cursor-pointer';
+        }
+
+        if (!state.history.length) {
+          container.innerHTML = `
+            <div class="bg-surface border border-hairline rounded-2xl p-8 text-center space-y-2">
+              <div class="text-xs font-semibold text-ink">No Reading History Logged Yet</div>
+              <p class="text-[11px] text-muted max-w-md mx-auto leading-relaxed">
+                Every PDF you open is automatically logged here by date. Even if you close a tab later, its topic remains recorded in gray for future reference.
+              </p>
+            </div>
+          `;
+          return;
+        }
+
+        const grouped = {};
+        state.history.forEach((item) => {
+          const d = item.date || 'Earlier';
+          if (!grouped[d]) grouped[d] = [];
+          grouped[d].push(item);
+        });
+
+        const dates = Object.keys(grouped).sort((a, b) => b.localeCompare(a));
+        const isList = state.historyLayoutMode === 'list';
+
+        container.innerHTML = dates
+          .map((dateStr) => {
+            const entries = grouped[dateStr];
+            return `
+              <div class="bg-surface border border-hairline rounded-2xl p-4 shadow-sm space-y-3">
+                <div class="flex items-center justify-between border-b border-hairline pb-2">
+                  <span class="font-mono text-xs font-semibold text-ink">${escapeHtml(dateStr)}</span>
+                  <span class="text-[11px] text-muted">${entries.length} entry(s)</span>
+                </div>
+                <div class="${isList ? 'flex flex-col divide-y divide-hairline border border-hairline rounded-xl overflow-hidden' : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'}">
+                  ${entries
+                    .map((entry) => {
+                      const isClosed = entry.status === 'closed';
+                      const c = getTabColorObj(entry.color);
+
+                      if (isList) {
+                        return `
+                          <div
+                            ${!isClosed ? `onclick="switchTab('${entry.paperId}')"` : ''}
+                            style="border-left: 4px solid ${isClosed ? '#9CA3AF' : c.hex};"
+                            class="px-3.5 py-2.5 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 ${
+                              isClosed
+                                ? 'bg-stone-100/90 text-stone-500'
+                                : 'bg-canvas hover:bg-white cursor-pointer text-ink'
+                            } transition-colors"
+                          >
+                            <div class="flex items-center gap-3 min-w-0 flex-1">
+                              <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background-color:${isClosed ? '#9CA3AF' : c.hex};"></span>
+                              <div class="min-w-0 flex-1">
+                                <div class="font-serif font-semibold text-xs truncate">
+                                  ${escapeHtml(entry.title)}
+                                </div>
+                                <div class="text-[11px] opacity-80 truncate">
+                                  Topic: ${escapeHtml(entry.topic)}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex items-center gap-2 shrink-0">
+                              <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded-full ${
+                                isClosed ? 'bg-stone-200 text-stone-600' : 'bg-emerald-100 text-emerald-800'
+                              }">
+                                ${isClosed ? 'Closed / Archived' : 'Active Tab ↗'}
+                              </span>
+                            </div>
+                          </div>
+                        `;
+                      }
+
+                      return `
+                        <div
+                          ${!isClosed ? `onclick="switchTab('${entry.paperId}')"` : ''}
+                          style="border-left: 4px solid ${isClosed ? '#9CA3AF' : c.hex};"
+                          class="p-3 rounded-xl border border-hairline ${
+                            isClosed
+                              ? 'bg-stone-100/90 text-stone-500'
+                              : 'bg-canvas hover:shadow-sm cursor-pointer text-ink'
+                          } space-y-1"
+                        >
+                          <div class="flex items-center justify-between gap-2">
+                            <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded-full ${
+                              isClosed ? 'bg-stone-200 text-stone-600' : 'bg-emerald-100 text-emerald-800'
+                            }">
+                              ${isClosed ? 'Closed / Archived Topic' : 'Active Tab'}
+                            </span>
+                          </div>
+                          <div class="font-serif font-semibold text-xs leading-snug">
+                            ${escapeHtml(entry.title)}
+                          </div>
+                          <div class="text-[11px] opacity-80">
+                            Topic: ${escapeHtml(entry.topic)}
+                          </div>
+                        </div>
+                      `;
+                    })
+                    .join('')}
+                </div>
+              </div>
+            `;
+          })
+          .join('');
+      }
+
+      // -----------------------------------------------------------------------
+      // INTERACTIVE RESEARCH FRAMEWORK FLOWCHART ENGINE
+      // -----------------------------------------------------------------------
+      function switchFlowchartBoard(boardKey) {
+        state.activeFlowchartBoard = boardKey;
+        state.selectedNodeId = null;
+        ['theoretical', 'design', 'methodology'].forEach((k) => {
+          const btn = document.getElementById('fc-tab-' + k);
+          if (!btn) return;
+          btn.className =
+            k === boardKey
+              ? 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-ink text-white shadow-sm cursor-pointer'
+              : 'px-3 py-1.5 rounded-lg text-xs font-medium text-muted hover:text-ink cursor-pointer';
+        });
+        syncFlowchartInspector();
+        renderFlowchartCanvas();
+      }
+
+      function addFlowchartNode(type) {
+        const board = state.flowcharts[state.activeFlowchartBoard];
+        const count = board.nodes.length;
+        const labels = { concept: 'New Concept', process: 'Process Step', question: 'Research Lens' };
+        const colors = { concept: 'amber', process: 'cobalt', question: 'plum' };
+        const newNode = {
+          id: 'node-' + Date.now(),
+          type,
+          title: `${labels[type] || 'Node'} ${count + 1}`,
+          desc: 'Click to edit construct or link to PDF tab',
+          x: 90 + (count % 3) * 260,
+          y: 80 + Math.floor(count / 3) * 165,
+          color: colors[type] || 'sage',
+          paperId: '',
+        };
+        board.nodes.push(newNode);
+        state.selectedNodeId = newNode.id;
+        saveState();
+        renderFlowchartCanvas();
+        syncFlowchartInspector();
+      }
+
+      function autoTidyFlowchart() {
+        const board = state.flowcharts[state.activeFlowchartBoard];
+        board.nodes.forEach((n, idx) => {
+          n.x = 70 + (idx % 3) * 270;
+          n.y = 65 + Math.floor(idx / 3) * 175;
+        });
+        saveState();
+        renderFlowchartCanvas();
+        showToast('Aligned flowchart cards');
+      }
+
+      function toggleConnectMode() {
+        state.connectMode = !state.connectMode;
+        state.connectSourceId = null;
+        const banner = document.getElementById('fc-connect-banner');
+        const btn = document.getElementById('btn-fc-connect');
+        if (banner) banner.classList.toggle('hidden', !state.connectMode);
+        if (btn) {
+          btn.className = state.connectMode
+            ? 'px-2.5 py-1 rounded-lg bg-ink text-white text-xs font-semibold cursor-pointer'
+            : 'px-2.5 py-1 rounded-lg bg-surface hover:bg-stone-100 text-ink border border-hairline text-xs font-medium cursor-pointer';
+        }
+      }
+
+      function zoomFlowchart(delta) {
+        state.fcZoom = Math.min(1.6, Math.max(0.5, state.fcZoom + delta));
+        applyFlowchartTransform();
+      }
+
+      function resetFlowchartView() {
+        state.fcZoom = 1;
+        state.fcPan = { x: 0, y: 0 };
+        applyFlowchartTransform();
+      }
+
+      function applyFlowchartTransform() {
+        const stage = document.getElementById('fc-stage');
+        const lbl = document.getElementById('fc-zoom-label');
+        if (stage) {
+          stage.style.transform = `translate(${state.fcPan.x}px, ${state.fcPan.y}px) scale(${state.fcZoom})`;
+        }
+        if (lbl) lbl.textContent = Math.round(state.fcZoom * 100) + '%';
+      }
+
+      function renderFlowchartCanvas() {
+        const board = state.flowcharts[state.activeFlowchartBoard];
+        const nodesLayer = document.getElementById('fc-nodes-layer');
+        const edgesSvg = document.getElementById('fc-edges-svg');
+        if (!board || !nodesLayer || !edgesSvg) return;
+
+        applyFlowchartTransform();
+
+        // Render Nodes
+        nodesLayer.innerHTML = '';
+        board.nodes.forEach((node) => {
+          const c = getTabColorObj(node.color);
+          const linkedPaper = node.paperId && state.papers.find((p) => p.id === node.paperId);
+          const el = document.createElement('div');
+          el.className = `fc-node ${state.selectedNodeId === node.id ? 'selected' : ''}`;
+          el.style.left = node.x + 'px';
+          el.style.top = node.y + 'px';
+          el.dataset.nodeId = node.id;
+
+          el.innerHTML = `
+            <div class="fc-drag-handle px-3 py-1.5 rounded-t-xl flex items-center justify-between cursor-grab border-b border-hairline" style="background-color:${c.bg};">
+              <span class="text-[10px] font-mono uppercase font-bold" style="color:${c.hex};">⋮⋮ ${escapeHtml(node.type)}</span>
+              ${
+                linkedPaper
+                  ? `<button onclick="event.stopPropagation(); switchTab('${linkedPaper.id}')" class="text-[10px] font-semibold underline text-ink cursor-pointer">PDF ↗</button>`
+                  : ''
+              }
+            </div>
+            <div class="p-3 space-y-1">
+              <div class="font-serif font-semibold text-xs text-ink leading-snug">${escapeHtml(node.title)}</div>
+              <div class="text-[11px] text-muted leading-snug">${escapeHtml(node.desc)}</div>
+            </div>
+          `;
+
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (state.connectMode) {
+              if (!state.connectSourceId) {
+                state.connectSourceId = node.id;
+                showToast('Now click the target card');
+              } else if (state.connectSourceId !== node.id) {
+                board.edges.push({
+                  id: 'edge-' + Date.now(),
+                  from: state.connectSourceId,
+                  to: node.id,
+                  label: 'links to',
+                });
+                toggleConnectMode();
+                saveState();
+                renderFlowchartEdges();
+              }
+              return;
+            }
+            state.selectedNodeId = node.id;
+            renderFlowchartCanvas();
+            syncFlowchartInspector();
+          });
+
+          // Smooth Mouse & Touch Node Dragging
+          const startDrag = (clientX, clientY) => {
+            const startX = clientX;
+            const startY = clientY;
+            const origX = node.x;
+            const origY = node.y;
+            state.selectedNodeId = node.id;
+            syncFlowchartInspector();
+
+            const onMove = (mx, my) => {
+              node.x = Math.max(10, origX + (mx - startX) / state.fcZoom);
+              node.y = Math.max(10, origY + (my - startY) / state.fcZoom);
+              el.style.left = node.x + 'px';
+              el.style.top = node.y + 'px';
+              renderFlowchartEdges();
+            };
+
+            const onMouseMove = (ev) => onMove(ev.clientX, ev.clientY);
+            const onTouchMove = (ev) => {
+              if (ev.touches[0]) onMove(ev.touches[0].clientX, ev.touches[0].clientY);
+            };
+            const onEnd = () => {
+              window.removeEventListener('mousemove', onMouseMove);
+              window.removeEventListener('mouseup', onEnd);
+              window.removeEventListener('touchmove', onTouchMove);
+              window.removeEventListener('touchend', onEnd);
+              saveState();
+            };
+
+            window.addEventListener('mousemove', onMouseMove);
+            window.addEventListener('mouseup', onEnd);
+            window.addEventListener('touchmove', onTouchMove, { passive: true });
+            window.addEventListener('touchend', onEnd);
+          };
+
+          el.addEventListener('mousedown', (e) => {
+            if (e.target.tagName === 'BUTTON') return;
+            e.stopPropagation();
+            startDrag(e.clientX, e.clientY);
+          });
+          el.addEventListener(
+            'touchstart',
+            (e) => {
+              if (e.target.tagName === 'BUTTON' || !e.touches[0]) return;
+              startDrag(e.touches[0].clientX, e.touches[0].clientY);
+            },
+            { passive: true }
+          );
+
+          nodesLayer.appendChild(el);
+        });
+
+        renderFlowchartEdges();
+      }
+
+      function renderFlowchartEdges() {
+        const board = state.flowcharts[state.activeFlowchartBoard];
+        const edgesSvg = document.getElementById('fc-edges-svg');
+        if (!board || !edgesSvg) return;
+
+        const defs = `
+          <defs>
+            <marker id="fc-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#6E6B64" />
+            </marker>
+          </defs>
+        `;
+
+        const paths = board.edges
+          .map((edge) => {
+            const fromNode = board.nodes.find((n) => n.id === edge.from);
+            const toNode = board.nodes.find((n) => n.id === edge.to);
+            if (!fromNode || !toNode) return '';
+
+            const x1 = fromNode.x + 115;
+            const y1 = fromNode.y + 48;
+            const x2 = toNode.x + 115;
+            const y2 = toNode.y + 48;
+            const cx1 = x1 + (x2 - x1) * 0.4;
+            const cy1 = y1;
+            const cx2 = x2 - (x2 - x1) * 0.4;
+            const cy2 = y2;
+            const midX = (x1 + x2) / 2;
+            const midY = (y1 + y2) / 2;
+
+            return `
+              <path d="M ${x1} ${y1} C ${cx1} ${cy1}, ${cx2} ${cy2}, ${x2} ${y2}"
+                stroke="#6E6B64" stroke-width="1.75" fill="none" marker-end="url(#fc-arrow)" />
+              <rect x="${midX - 44}" y="${midY - 10}" width="88" height="20" rx="6" fill="#FFFFFF" stroke="#E6E4DF" />
+              <text x="${midX}" y="${midY + 3}" text-anchor="middle" font-size="10" fill="#6E6B64" font-family="Inter, sans-serif">
+                ${escapeHtml(edge.label || '')}
+              </text>
+            `;
+          })
+          .join('');
+
+        edgesSvg.innerHTML = defs + paths;
+      }
+
+      function syncFlowchartInspector() {
+        const board = state.flowcharts[state.activeFlowchartBoard];
+        const node = board && board.nodes.find((n) => n.id === state.selectedNodeId);
+        const empty = document.getElementById('fc-inspector-empty');
+        const form = document.getElementById('fc-inspector-form');
+        if (!empty || !form) return;
+
+        if (!node) {
+          empty.classList.remove('hidden');
+          form.classList.add('hidden');
+          return;
+        }
+
+        empty.classList.add('hidden');
+        form.classList.remove('hidden');
+        document.getElementById('fc-insp-title').value = node.title;
+        document.getElementById('fc-insp-desc').value = node.desc;
+
+        const paperSelect = document.getElementById('fc-insp-paper');
+        paperSelect.innerHTML =
+          `<option value="">— None —</option>` +
+          state.papers
+            .map(
+              (p) =>
+                `<option value="${p.id}" ${node.paperId === p.id ? 'selected' : ''}>${escapeHtml(
+                  p.simplifiedTitle || p.title
+                )}</option>`
+            )
+            .join('');
+
+        document.getElementById('fc-insp-colors').innerHTML = TAB_COLORS.map(
+          (c) => `
+            <button
+              onclick="updateSelectedFlowNode('color', '${c.id}')"
+              style="background-color:${c.hex};"
+              class="w-5 h-5 rounded-full cursor-pointer ${
+                node.color === c.id ? 'ring-2 ring-offset-1 ring-ink' : 'opacity-75'
+              }"
+            ></button>
+          `
+        ).join('');
+      }
+
+      function updateSelectedFlowNode(field, value) {
+        const board = state.flowcharts[state.activeFlowchartBoard];
+        const node = board && board.nodes.find((n) => n.id === state.selectedNodeId);
+        if (!node) return;
+        node[field] = value;
+        saveState();
+        renderFlowchartCanvas();
+        if (field === 'color') syncFlowchartInspector();
+      }
+
+      function deleteSelectedFlowNode() {
+        const board = state.flowcharts[state.activeFlowchartBoard];
+        if (!board || !state.selectedNodeId) return;
+        board.nodes = board.nodes.filter((n) => n.id !== state.selectedNodeId);
+        board.edges = board.edges.filter((e) => e.from !== state.selectedNodeId && e.to !== state.selectedNodeId);
+        state.selectedNodeId = null;
+        saveState();
+        renderFlowchartCanvas();
+        syncFlowchartInspector();
+      }
+
+      // -----------------------------------------------------------------------
+      // MARKDOWN LITERATURE REVIEW EXPORT
+      // -----------------------------------------------------------------------
+      function exportLiteratureReview() {
+        const lines = [
+          '# Folio Literature Review & Synthesis Export',
+          '',
+          '## Master Synthesis Notes',
+          state.globalNotes || '_No synthesis notes yet._',
+          '',
+          '## Comparative Paper Matrix',
+          ...state.papers.map((p) => {
+            const hlText = p.highlights
+              .map((h) => `  - **[${HIGHLIGHT_TYPES[h.type]?.label || h.type} | p.${h.page}]** "${h.text}"`)
+              .join('\n');
+            return [
+              `### ${p.title}`,
+              `- **Author & Year:** ${p.authorYear || p.title}`,
+              `- **Summary:** ${p.summary || 'N/A'}`,
+              `- **Paraphrase:** ${p.paraphrase || 'N/A'}`,
+              hlText || '  - _No highlights_',
+              '',
+            ].join('\n');
+          }),
+        ];
+
+        const blob = new Blob([lines.join('\n')], { type: 'text/markdown;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Folio-Literature-Review.md';
+        a.click();
+        URL.revokeObjectURL(url);
+        showToast('Exported Folio-Literature-Review.md');
+      }
+
+      // -----------------------------------------------------------------------
+      // SHARE STANDALONE TESTER BUILD
+      // -----------------------------------------------------------------------
+      function openShareTesterModal() {
+        const modal = document.getElementById('share-tester-modal');
+        if (modal) modal.classList.remove('hidden');
+      }
+
+      function closeShareTesterModal() {
+        const modal = document.getElementById('share-tester-modal');
+        if (modal) modal.classList.add('hidden');
+      }
+
+      function buildStandaloneHtmlString(includeCurrentState) {
+        const cloneDoc = document.documentElement.cloneNode(true);
+        const modal = cloneDoc.querySelector('#share-tester-modal');
+        if (modal) modal.classList.add('hidden');
+        const toast = cloneDoc.querySelector('#toast-banner');
+        if (toast) toast.classList.add('hidden');
+        const existingBundle = cloneDoc.querySelector('#folio-bundled-state');
+        if (existingBundle) existingBundle.remove();
+
+        if (includeCurrentState) {
+          const serializable = {
+            ...state,
+            activeTabId: 'dashboard',
+            papers: state.papers.map((p) => ({ ...p, fileData: undefined })),
+          };
+          const scriptTag = document.createElement('script');
+          scriptTag.id = 'folio-bundled-state';
+          scriptTag.type = 'application/json';
+          scriptTag.textContent = JSON.stringify(serializable);
+          cloneDoc.querySelector('body').appendChild(scriptTag);
+        }
+
+        return '<!DOCTYPE html>\n' + cloneDoc.outerHTML;
+      }
+
+      function downloadStandaloneApp(includeCurrentState) {
+        const htmlStr = buildStandaloneHtmlString(includeCurrentState);
+        const blob = new Blob([htmlStr], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = includeCurrentState ? 'Folio-Workspace-Shared.html' : 'Folio-Tester-Edition.html';
+        a.click();
+        URL.revokeObjectURL(url);
+        closeShareTesterModal();
+        showToast('Downloaded standalone HTML file — ready to send to your friend!');
+      }
+
+      function copyAppSourceToClipboard() {
+        const htmlStr = buildStandaloneHtmlString(false);
+        const ta = document.createElement('textarea');
+        ta.value = htmlStr;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        closeShareTesterModal();
+        showToast('Copied complete single-file HTML to clipboard!');
+      }
+
+      // -----------------------------------------------------------------------
+      // GLOBAL RELOAD & INITIALIZATION
+      // -----------------------------------------------------------------------
+      function renderAllTabsAndViews() {
+        renderTabStrip();
+        if (state.activeTabId === 'dashboard') {
+          renderDashboard();
+        } else {
+          renderReaderView();
+        }
+      }
+
+      window.reloadWorkspace = function reloadWorkspace() {
+        try {
+          saveState();
+          renderAllTabsAndViews();
+          if (state.activeTabId === 'dashboard') {
+            setDashboardLayoutMode(state.dashboardLayoutMode || 'split');
+          }
+          showToast('Workspace reloaded & synced');
+        } catch (err) {
+          console.error('Reload error:', err);
+        }
+      };
+
+      function initApp() {
+        loadState();
+        renderTabStrip();
+        setDashboardLayoutMode(state.dashboardLayoutMode || 'split');
+        renderDashboard();
+
+        // File Input & Drag-and-Drop Listeners
+        const fileInput = document.getElementById('pdf-file-input');
+        if (fileInput) {
+          fileInput.addEventListener('change', (e) => {
+            handlePDFFiles(e.target.files);
+            e.target.value = '';
+          });
+        }
+
+        const dragOverlay = document.getElementById('drag-overlay');
+        window.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          if (dragOverlay) dragOverlay.classList.remove('hidden');
+        });
+        window.addEventListener('dragleave', (e) => {
+          if (e.relatedTarget === null && dragOverlay) dragOverlay.classList.add('hidden');
+        });
+        window.addEventListener('drop', (e) => {
+          e.preventDefault();
+          if (dragOverlay) dragOverlay.classList.add('hidden');
+          if (e.dataTransfer && e.dataTransfer.files) {
+            handlePDFFiles(e.dataTransfer.files);
+          }
+        });
+
+        // Selection Popover Listener
+        document.addEventListener('mouseup', () => {
+          setTimeout(handleTextSelectionPopover, 15);
+        });
+
+        // Canvas Background Panning
+        const viewport = document.getElementById('fc-viewport');
+        if (viewport) {
+          viewport.addEventListener('mousedown', (e) => {
+            if (e.target.closest('.fc-node')) return;
+            const startX = e.clientX - state.fcPan.x;
+            const startY = e.clientY - state.fcPan.y;
+            const onMove = (ev) => {
+              state.fcPan.x = ev.clientX - startX;
+              state.fcPan.y = ev.clientY - startY;
+              applyFlowchartTransform();
+            };
+            const onUp = () => {
+              window.removeEventListener('mousemove', onMove);
+              window.removeEventListener('mouseup', onUp);
+            };
+            window.addEventListener('mousemove', onMove);
+            window.addEventListener('mouseup', onUp);
+          });
+        }
+
+        // Keyboard Shortcuts
+        window.addEventListener('keydown', (e) => {
+          if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'o') {
+            e.preventDefault();
+            document.getElementById('pdf-file-input').click();
+          } else if (e.key === 'Escape' && state.connectMode) {
+            toggleConnectMode();
+          }
+        });
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const reloadBtn = document.getElementById('btn-reload-workspace');
+        if (reloadBtn) {
+          reloadBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.reloadWorkspace();
+          });
+        }
+        initApp();
+      });
+    </script>
+  
+</body></html>
